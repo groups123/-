@@ -1,0 +1,318 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    height: 3550px;
+}
+#main .Optimization{
+    width: 100%;
+    height: 760px;
+    position: relative;
+}
+#main .Optimization .box{
+    width: 240px;
+    height: 73px;
+    margin-top: 43px;
+    margin-left: 880px;
+    position: absolute;
+}
+#main .Optimization .box .word{
+    font-size: 40px;
+    font-family: MicrosoftYaHei;
+    color: #444444;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px
+}
+#main .Optimization .box .word1{
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    text-align: center;
+    margin-top: 19px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+#main .Optimization .box1{
+    width: 713px;
+    height: 475px;
+    margin-top: 196px;
+    margin-left: 359px;
+    position: absolute;
+}
+#main .Optimization .box1 img{
+    width: 713px;
+    height: 475px;
+}
+#main .Optimization .box2{
+    width: 369px;
+    height: 300px;
+    position: absolute;
+    margin-left: 1187px;
+    margin-top: 215px;
+}
+#main .Optimization .box2 img{
+   float: left;
+}
+#main .Optimization .box2 .word2{
+    float: left;
+    margin-left: 18px;
+    font-size: 30px;
+    margin-top: 29px;
+    font-weight: bolder;
+}
+#main .Optimization .box2 .word3{
+    float: left;
+    font-size: 15.5px;
+    margin-top: 50px;
+    color: #4e4e4e;
+    line-height: 26px;
+}
+#main .Dry{
+    width: 100%;
+    height: 597px;
+    background: #ebebeb;
+    position: relative;
+}
+#main .Dry .box3{
+    width: 477px;
+    height: 314px;
+    margin-top: 81px;
+    margin-left: 361px;
+    position: absolute;
+}
+#main .Dry .box3 img{
+    float: left;
+}
+#main .Dry .box3 .word4{
+    float: left;
+    margin-left: 18px;
+    font-size: 30px;
+    margin-top: 29px;
+    font-weight: bolder;
+}
+#main .Dry .box3 .word5{
+    float: left;
+    font-size: 14.4px;
+    margin-top: 44px;
+    color: #4e4e4e;
+    line-height: 26px;
+}
+#main .Dry .box4{
+    width: 541px;
+    height: 476px;
+    position: absolute;
+    margin-top: 54px;
+    margin-left: 1016px;
+}
+#main .Dry .box4 img{
+    width: 541px;
+    height: 476px;
+}
+#main .Make{
+    width: 100%;
+    height: 666px;
+    position: relative;
+}
+#main .Make .box5{
+    width: 378px;
+    height: 283px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 359px;
+}
+#main .Make .box5 img{
+    width: 378px;
+    height: 283px;
+}
+#main .Make .box6{
+    width: 538px;
+    height: 244px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 845px;
+}
+#main .Make .box6 img{
+    float: left;
+}
+#main .Make .box6 .word6{
+    float: left;
+    margin-left: 18px;
+    font-size: 30px;
+    margin-top: 29px;
+    font-weight: bolder;
+}
+#main .Make .box6 .word7{
+    float: left;
+    font-size: 14.4px;
+    margin-top: 39px;
+    color: #4e4e4e;
+    line-height: 26px;
+}
+#main .Make .box7{
+    width: 378px;
+    height: 283px;
+    position: absolute;
+    margin-top: 356px;
+    margin-left: 361px;
+}
+#main .Make .box7 img{
+    width: 378px;
+    height: 283px;
+}
+#main .Make .box8{
+    width: 378px;
+    height: 283px;
+    position: absolute;
+    margin-top: 356px;
+    margin-left: 769px;
+}
+#main .Make .box8 img{
+    width: 378px;
+    height: 283px;
+}
+#main .Make .box9{
+    width: 378px;
+    height: 283px;
+    position: absolute;
+    margin-top: 356px;
+    margin-left: 1178px;
+}
+#main .Make .box9 img{
+    width: 378px;
+    height: 283px;
+}
+#main .Technique{
+    width: 100%;
+    height: 660px;
+    background: #ebebeb;
+    position: relative;
+}
+#main .Technique .box10{
+    width: 260px;
+    height: 62px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 797px;
+}
+#main .Technique .box10 img{
+    float: left;
+}
+#main .Technique .box10 .word8{
+    float: left;
+    margin-left: 18px;
+    font-size: 30px;
+    margin-top: 29px;
+    font-weight: bolder;
+}
+#main .Technique .box11{
+    width: 1102px;
+    height: 80px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 221px;
+}
+#main .Technique .box11 .word9{
+    text-align: center;
+    font-size: 14px;
+    color: #4e4e4e;
+    line-height: 27px
+}
+#main .Technique .box12{
+    width: 378px;
+    height: 252px;
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 359px;
+}
+#main .Technique .box12 img{
+    width: 378px;
+    height: 252px;
+}
+#main .Technique .box13{
+    width: 378px;
+    height: 252px;
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 769px;
+}
+#main .Technique .box13 img{
+    width: 378px;
+    height: 252px;
+}
+#main .Technique .box14{
+    width: 378px;
+    height: 252px;
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 1181px;
+}
+#main .Technique .box14 img{
+    width: 378px;
+    height: 252px;
+}
+#main .Exhibition{
+    width: 100%;
+    height: 865px;
+    position: relative;
+}
+#main .Exhibition .box15{
+    width: 240px;
+    height: 120px;
+    margin-top: 36px;
+    margin-left: 849px;
+    position: absolute;
+}
+#main .Exhibition .box15 .word10{
+    font-size: 40px;
+    font-family: MicrosoftYaHei;
+    color: #444444;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px
+}
+#main .Exhibition .box15 .word11{
+    font-size: 22px;
+    font-family: MicrosoftYaHei;
+    text-align: center;
+    margin-top: 26px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+#main .Exhibition .box16{
+    width: 788px;
+    height: 592px;
+    margin-top: 180px;
+    margin-left: 360px;
+    position: absolute;
+}
+#main .Exhibition .box16 img{
+    width: 788px;
+    height: 592px;
+}
+#main .Exhibition .box17{
+    width: 378px;
+    height: 283px;
+    margin-top: 180px;
+    margin-left: 1182px;
+    position: absolute;
+}
+#main .Exhibition .box17 img{
+    width: 378px;
+    height: 283px;
+}
+#main .Exhibition .box18{
+    width: 378px;
+    height: 283px;
+    margin-top: 489px;
+    margin-left: 1182px;
+    position: absolute;
+}
+#main .Exhibition .box18 img{
+    width: 378px;
+    height: 283px;
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="sass/index.css">
+  <link rel="stylesheet" href="sass/index1.css">
+  <script src="js/jquery.js"></script>
+  <script src="layui/layui.js"></script>
+  <script src="js/index1.js"></script>
+</head>
+
+<body>
+  <div class="header_all">
+    <form></form>
+    <header id="header">
+      <div class="logo"></div>
+      <ul class="layui-nav banner" lay-filter="">
+        <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+        <li class="layui-nav-item ">
+          <a href="javascript:;">发现好物</a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">寻找手艺人</a>
+
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">工艺定制</a>
+        </li>
+        <li class="layui-nav-item"><a href="javascript:;">关于我们</a></li>
+      </ul>
+      <div class="nav-right">
+        <i class=" layui-icon layui-icon-search"></i>
+        <span class="line"></span>
+        <span><a>注册</a></span>
+        <span><a>登录</a></span>
+      </div>
+    </header>
+  </div>
+  <script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+      var element = layui.element;
+    });
+  </script>
+  <div class="nav"></div>
+  <div class="tailor">
+    <div class="tailor_title">
+      <div class="tailor_item">
+        <span></span>
+        <span>私人定制</span>
+        <span></span>
+      </div>
+      <h6>Person Tailor</h6>
+    </div>
+  
+    <div class="layui-carousel carousel" id="test1">
+      <div carousel-item>
+        <div class="item1">
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more bg">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+        </div>
+        <div class="item1">
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+        </div>
+
+        <div class="item1">
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+        </div>
+        <div class="item1">
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+          <div class="item1_">
+            <div class="radiu"></div>
+            <h2>刺绣</h2>
+            <h6>Jade article</h6>
+            <div class="more">更多</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 条目中可以是任意内容，如：<img src=""> -->
+    <script>
+      layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+          elem: '#test1',
+          width: '100%' //设置容器宽度
+          , arrow: 'always' //始终显示箭头
+          //,anim: 'updown' //切换动画方式
+        });
+      });
+    </script>
+  </div>
+  <div class="persons">
+      <div class="persons_title">
+          <div class="persons_item">
+            <span></span>
+            <span>手艺人</span>
+            <span></span>
+          </div>
+          <h6>Craftman</h6>
+        </div>
+    <div class="person">
+      <div class="person_1">
+        <h2>漆器匠人</h2>
+        <p></p>
+        <img src="imgs/index/person1.png">
+        <div class="hover_">
+          <div class="intro">
+            <p>林毅</p>
+            <p>将徽州特色的犀皮漆、推光漆、漆砂砚及精细</p>
+          </div>
+        </div>
+      </div>
+      <div class="person_1">
+        <h2>纺织匠人</h2>
+        <p></p>
+        <img src="imgs/index/person2.png">
+        <div class="hover_">
+          <div class="intro">
+            <p>林毅</p>
+            <p>将徽州特色的犀皮漆、推光漆、漆砂砚及精细</p>
+          </div>
+        </div>
+      </div>
+      <div class="person_1">
+        <h2>布艺匠人</h2>
+        <p></p>
+        <img src="imgs/index/person3.png">
+        <div class="hover_">
+          <div class="intro">
+            <p>林毅</p>
+            <p>将徽州特色的犀皮漆、推光漆、漆砂砚及精细</p>
+          </div>
+        </div>
+      </div>
+      <div class="person_1">
+        <h2>铁器匠人</h2>
+        <p></p>
+        <img src="imgs/index/person4.png">
+        <div class="hover_">
+          <div class="intro">
+            <p>林毅</p>
+            <p>将徽州特色的犀皮漆、推光漆、漆砂砚及精细</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more">更多</div>
+  </div>
+  <div class="hot_all">
+    <div class="hot_pull">
+        <div class="hot_title">
+            <div class="popr">
+              <span></span>
+              <span>热门推荐</span>
+              <span></span>
+            </div>
+            <h6>Popular&nbsp; Recommendations</h6>
+          </div>
+      <div class="goods">
+        <img src="imgs/index/text-1.png">
+        <div class="text">
+          <span>芙蓉城三月雨纷纷四月绣花针</span>
+          <span>羽毛扇遥指千军阵锦缎裁几寸</span>
+          <span>看铁马踏冰河丝线缝韶华红尘</span>
+          <span>千帐灯山水一程风雪再一程</span>
+        </div>
+        <div class="xiu">
+          <div class="text_xiu">
+            <p>【蜀绣】</p>
+            <p class="line_"></p>
+            <p>"在丝绸或其他织物上采用蚕丝线绣出花纹图案的中国传统工艺。</p>
+          </div>
+          <div class="text_xiu">
+            <p>【苏绣】</p>
+            <p class="line_"></p>
+            <p>"2006年5月20日，苏绣列入第一批国家级非物质文化遗产名录。"</p>
+          </div>
+          <div class="text_xiu">
+            <p>【湘绣】</p>
+            <p class="line_"></p>
+            <p>"在丝绸或其他织物上采用蚕丝线绣出花纹图案的中国传统工艺。</p>
+          </div>
+        </div>
+        <div class="text_bottom">
+          <div class="center">
+            <p>春风荡漾时</p>
+            <p>阿谁绣出百花枝</p>
+          </div>
+        </div>
+      <div class="img"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="hot_all2">
+    <div class="hot_pull">
+      <div class="goods">
+        <img src="imgs/index/text-2.png">
+        <div class="text">
+          <span>与东方美学里</span>
+          <span>与自然是一种亲密的关系</span>
+          <span>设计理念中更多强调的尊重自然</span>
+          <span>顺应自然天性</span>
+        </div>
+        <div class="xiu">
+          <div class="xiu_text">
+              <p>【苏绣】</p>
+              <p class="line_"></p>
+              <p>"2006年5月20日，苏绣列入第一批国家级非物质文化遗产名录。"</p>
+          </div>
+          <div class="xiu_text">
+              <p>【苏绣】</p>
+              <p class="line_"></p>
+              <p>"2006年5月20日，苏绣列入第一批国家级非物质文化遗产名录。"</p>
+          </div>
+          <div class="xiu_text">
+              <p>【苏绣】</p>
+              <p class="line_"></p>
+              <p>"2006年5月20日，苏绣列入第一批国家级非物质文化遗产名录。"</p>
+          </div>
+        </div>
+        <div class="text_bottom">
+          <div class="center">
+            <p>木叶亭皋下</p>
+            <p>重阳近&nbsp;又是捣衣秋</p>
+          </div>
+        </div>
+        <div class="img"></div>
+      </div>
+    </div>
+  </div>
+  <div class="hot_all3">
+      <div class="hot_pull">
+         
+        <div class="goods">
+          <img src="imgs/index/text-3.png">
+          <div class="text">
+            <span>芙蓉城三月雨纷纷四月绣花针</span>
+            <span>羽毛扇遥指千军阵锦缎裁几寸</span>
+            <span>看铁马踏冰河丝线缝韶华红尘</span>
+            <span>千帐灯山水一程风雪再一程</span>
+          </div>
+          <div class="xiu">
+            <div class="text_xiu">
+              <p>【蜀绣】</p>
+              <p class="line_"></p>
+              <p>"在丝绸或其他织物上采用蚕丝线绣出花纹图案的中国传统工艺。</p>
+            </div>
+            <div class="text_xiu">
+              <p>【苏绣】</p>
+              <p class="line_"></p>
+              <p>"2006年5月20日，苏绣列入第一批国家级非物质文化遗产名录。"</p>
+            </div>
+            <div class="text_xiu">
+              <p>【湘绣】</p>
+              <p class="line_"></p>
+              <p>"在丝绸或其他织物上采用蚕丝线绣出花纹图案的中国传统工艺。</p>
+            </div>
+          </div>
+          <div class="text_bottom">
+            <div class="center">
+              <p>春风荡漾时</p>
+              <p>阿谁绣出百花枝</p>
+            </div>
+          </div>
+        <div class="img"></div>
+        <div class="more_">更多</div>
+        </div>
+      </div>
+    </div>
+  
+  <footer id="footer">
+    <div class="footer">
+      <div class="line1">
+        <span class=" layui-icon  layui-icon-cellphone"></span>
+        <span>关于我们</span>
+        <span>加入匠心</span>
+        <span>用户协议</span>
+        <span>隐私政策</span>
+        <span>侵权电话</span>
+        <span>企业服务</span>
+        <span>帮助中心</span>
+        <span>联系我们</span>
+        <span>中文</span>
+        <span>English</span>
+        <div class="chat">
+          <span class=" layui-icon layui-icon-login-wechat"></span>
+          <span class="layui-icon layui-icon-login-weibo"></span>
+        </div>
+      </div>
+      <div class="line2"></div>
+      <div class="line3">
+        <span>京ICP备11017824号-4</span>
+        <span>|</span>
+        <span> 京ICP证140164号</span>
+        <span>|</span>
+        <span> 网络文化经营许可证&nbsp;京网文|</span>
+        <span>|</span>
+        <span>广播电视节目制作经营许可证（京东）字第06990号</span>
+      </div>
+      <div class="line4">
+
+        <span>网上有害信息举报专区</span>
+        <span>|</span>
+        <span>不良信息举报电话：-1--56538658</span>
+        <span>|</span>
+        <span>举报邮箱jubao@chool.com.cn</span>
+        <span>|</span>
+        <span>联系电话：010-01010100</span>
+        <span>Copyright&reg;2006-2019匠心</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+*{
+    margin:0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 650px;
+    background: url("../imgs/Custom\ Page/banner.jpg");
+    background-size: 100% 100%;
+}
+#main{
+    width: 100%;
+    height: 2175px;
+    border: 1px solid white;
+    position: relative;
+}
+#main .line{
+    margin-top: 99px; 
+    margin-left: 50%; 
+    position: absolute;
+    z-index: -4;
+	height: 1720px;
+	border: solid 1px #787878;
+}
+#main .box{
+    width: 100%;
+    height: 677px;
+    position: absolute;
+    margin-top: 80px;
+}
+#main .box .box1{
+    width: 380px;
+    height: 200px;
+    position: absolute;
+    margin-top: 183px;
+    margin-left: 361px;
+}
+#main .box .box1 .word{
+	font-family: MicrosoftYaHei;
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+    color: #333333;
+    text-align: center;
+}
+#main .box .box1 .word1{
+    margin-top: 60px;
+    line-height:22px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+#main .box2{
+    width: 300px;
+    height: 500px;
+    background: #936237;
+    margin-left: 1260px;
+    position: absolute;
+    margin-top: 37px;
+}
+#main .box3{
+    width: 604px;
+    height: 300px;
+    position: absolute;
+    margin-left: 856px;
+    margin-top: 170px;
+}
+#main .box3 img{
+    width: 604px;
+    height: 300px;
+    background-size: 100% 100%  
+} 
+#main .box4{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    margin-top: 756px;
+    background: #ECECEC;
+    z-index:-3;
+}
+#main .box4 .line1{
+    width: 0.1px;
+    margin-left: 50%; 
+    height: 550px;
+    position: absolute;
+    z-index: -2;
+    margin-left: 50%; 
+    z-index: -4;
+	border: solid 1px #787878;
+}
+#main .box4 .box5{
+    width: 300px;
+    height: 500px;
+    background: #C0BEBF;
+    margin-left: 361px;
+    position: absolute;
+}
+#main .box4 .box6{
+    width: 604px;
+    height: 300px;
+    position: absolute;
+    margin-left: 461px;
+    margin-top: 133px;
+    z-index: 1;
+   
+}
+#main .box4 .box6 img{
+    width: 604px;
+    height: 300px;
+    background-size: 100% 100%;
+}
+#main .box4 .box7{
+    width: 380px;
+    height: 200px;
+    position: absolute;
+    margin-top: 134px;
+    margin-left: 1167px;
+}
+#main .box4 .box7 .word{
+    text-align: center;
+	font-family: MicrosoftYaHei;
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+#main .box4 .box7 .word1{
+    margin-top: 71px;
+    line-height:25px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+#main .box8{
+    width: 100%;
+    height: 717px;
+    position: absolute;
+    margin-top: 1255px;
+}
+#main .box8 .box9{
+    width: 380px;
+    height: 200px;
+    position: absolute;
+    margin-top: 206px;
+    margin-left: 361px;
+}
+#main .box8 .box9 .word{
+    text-align: center;
+	font-family: MicrosoftYaHei;
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+#main .box8 .box9 .word1{
+    margin-top: 60px;
+    line-height:25px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+#main .box10{
+    width: 300px;
+    height: 500px;
+    background: #343434;
+    margin-top: 60px;
+    margin-left: 1260px;
+    position: absolute;
+}
+#main .box11{
+    width: 604px;
+    height: 300px;
+    position: absolute;
+    margin-left: 856px;
+    margin-top: 193px;
+}
+#main .box11 img{
+    width: 604px;
+    height: 300px;
+    background-size: 100% 100%  
+} 
+#main .box8 .box12{
+    width: 160px;
+    height: 38px;
+    margin-top: 621px;
+    border-radius: 5px;
+    background: #936237;
+}
+#main .box8 .box12 .word2{
+    text-align: center;
+    line-height: 38px;
+	font-family: MicrosoftYaHeiLight;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+#main .explain{
+    width: 100%;
+    height: 202px;
+    margin-top: 1970px;
+    background: #ECECEC;
+}
+#main .explain .word3{
+    margin-left: 361px;
+    padding-top: 49px;
+	font-family: MicrosoftYaHei;
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+#main .explain .word4{
+    margin-left: 361px;
+    margin-top: 29px;
+    line-height: 30px;
+	font-family: MicrosoftYaHeiLight;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}

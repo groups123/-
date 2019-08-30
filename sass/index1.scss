@@ -1,0 +1,509 @@
+*{
+    margin: 0px auto;
+}
+// 导航
+.nav{
+    width: 100%;
+    height:650px ;
+    background-image: url('../imgs/index/banner.png')
+}
+// 私人定制
+.tailor{
+    width: 1200px;
+    height:580px;  
+    position: relative;
+   margin: 55px auto;
+    .tailor_title{
+        width: 500px;
+        height: 150px;
+        margin: 0px auto;
+        position: relative;
+        .tailor_item{
+            width: 100%;
+            height: 70px;
+            span:nth-child(1){
+                width: 110px;
+                display: block;
+                position: absolute;
+                top: 35px;
+                float: left;
+            }
+            span:nth-child(2){
+                font-size: 48px;
+                text-align: center;
+                width: 100%;
+                display: block;
+                float: left;
+            }
+            span:nth-child(3){
+                width: 110px;
+                display: block;
+                position: absolute;
+                top: 35px;
+                float: left;
+                right: 0px;
+            }
+        }
+       
+        h6{
+            font: 20px '微软雅黑';
+            margin-top: 10px;
+            text-align: center
+        }   
+    }
+    .line_{
+        position: absolute;
+        top:36px;
+        border: 1.2px solid rgb(211, 192, 192);
+        width: 450px;
+        left: 50%;
+        transform: translateX(-225px);
+        z-index: -2  
+    }
+    // 轮播
+    .carousel{
+        height: 423px!important;
+        background-color: white!important;
+        margin-top: 60px;
+        .item1{
+            width: 100%;
+            height: 423px;
+            background-color: white;   
+            
+            .item1_{
+                  float: left;  
+                 width: 300px;
+                 height: 370px;
+            .radiu{
+             width: 210px;
+             height: 210px;
+             border-radius: 50%;
+             margin: 0 auto;
+           
+            }
+            h2{
+                font-size: 31px;
+                margin-top: 20px
+            }
+            h6{
+                font-size: 18px;
+                margin-top: 10px;
+                margin-bottom: 26px; 
+            }
+            h2,h6{
+                text-align: center;
+            }
+            .more{
+                margin: 0 auto;
+                width: 105px;
+                height: 40px;
+                border-radius: 10px;
+                text-align: center;
+                margin-top: 15px;
+                background-color: #D5D2CB;
+                color: white;
+                line-height: 40px;
+                &:hover{
+                    background-color: #93623A;
+                }
+            } }
+                .item1_:nth-child(1){
+                    .radiu{
+                        background:url("../imgs/index/xiu.png");
+                }
+            
+            }
+            .item1_:nth-child(2){
+                .radiu{
+                    background:url("../imgs/index/mu.png");
+            }
+        }
+        .item1_:nth-child(3){
+            .radiu{
+                background:url("../imgs/index/ci.png");
+        }
+    }
+    .item1_:nth-child(4){
+        .radiu{
+            background:url("../imgs/index/yu.png");
+              }
+             }
+            }
+            .layui-carousel-ind{
+                display: none;
+            }
+            button:nth-child(3){
+                border-radius: 0% 0%;
+                height: 75px;
+                width: 51px;
+                font-size: 50px;
+                left: -53px!important;
+                top:200px
+            }
+            button:nth-child(4){
+                margin-left: -50px;
+                border-radius: 0% 0%;
+                height: 75px;
+                width: 51px;
+                font-size: 50px;
+                right: -53px!important;
+                top:200px
+            }
+
+
+           }
+          }
+// 手艺人
+.persons{
+    width: 1200px;
+    height: 725px;
+    margin:56px auto;
+    position: relative;
+    .persons_title{
+        width: 500px;
+        height: 150px;
+        margin: 0px auto;
+        position: relative;
+    
+        .persons_item{
+            width: 100%;
+            height: 70px;
+        
+            span:nth-child(1){
+                width: 110px;
+                display: block;
+                position: absolute;
+                top: 35px;
+                float: left;
+            }
+            span:nth-child(2){
+                font-size: 48px;
+                text-align: center;
+                width: 100%;
+                display: block;
+                float: left;
+            }
+            span:nth-child(3){
+                width: 110px;
+              
+                display: block;
+                position: absolute;
+                top: 35px;
+                float: left;
+                right: 0px;
+            }
+        }
+       
+        h6{
+            font: 20px '微软雅黑';
+            margin-top: 10px;
+            text-align: center
+        }   
+    }
+    .line_{
+        position: absolute;
+        top:36px;
+        border: 1.2px solid rgb(211, 192, 192);
+        width: 450px;
+        left: 50%;
+        transform: translateX(-225px);
+        z-index: -2  
+    }
+    .person{
+        height: 439px;
+        width: 100%;
+        margin-top: 63px;
+        .person_1{
+            width:273px;
+            height:436px ;
+            float: left;
+           margin-right: 34px;
+           position: relative;
+          >h2{
+              font:bold  30px '微软雅黑';
+          }
+           > p{
+                border: 3px solid #627A84;
+                width: 80px; 
+                margin-top: 10px
+            }
+            >img{
+                margin-top: 29px;
+                &:hover + .hover_{
+                 visibility: visible;
+                 height: 97px;
+                }
+            }
+           .hover_{
+               width: 100%;
+               height: 0px;
+              position: absolute;
+              bottom: -5px;
+              background-color: #916544;
+              visibility: hidden;
+              transition: all 1s;
+              overflow: hidden;
+              .intro{
+                  width: 242px;
+                  margin: 0 auto;
+                  color: white;
+                p:nth-child(1){
+                      font-size: 24px;
+                      margin-top: 10px
+                  }
+                  p:nth-child(2){
+                     font-size: 20px;
+                     width: 100%
+                  }
+              
+              }
+           } 
+        }
+        .person_1:last-child{
+            margin-right: 0px;
+        }
+    }
+    .more{
+        width: 106px;
+        height: 37px;
+        border-radius: 10px;
+        margin:36px auto;
+        color: white;
+        text-align: center;
+        line-height: 37px;
+        background-color: #93623A;
+        font-size: 18px;
+    }
+}
+// 热门推荐
+@mixin goods{
+    width: 100%;
+    height: 668px;
+    position: relative;
+   top: 40px;
+};
+@mixin  text {
+    writing-mode:tb-rl;
+    height: 319px;
+    width: 125px;
+position: absolute;
+left: 100px;
+top:135px;
+z-index: 2;
+}
+@mixin text_xiu {
+    margin-right: 80px;
+    width: 263px;
+    height:107px;
+    float: left;
+    position: relative;
+}
+@mixin xiu{
+    width: 956px;
+    height: 168px;
+}
+.hot_all{
+    width: 100%;
+    height: auto;
+    background-color: #EDEEE9;
+}
+.hot_pull{
+    width: 1200px;
+    height:910px;
+    margin:50px auto;
+    position: relative;
+    .hot_title{
+        width: 500px;
+        height: 170px;
+        margin: 0px auto;
+        position: relative;
+        top:40px;
+        .popr{
+            width: 100%;
+            height: 70px;
+            span:nth-child(1){
+                width: 110px;
+                display: block;
+                position: absolute;
+                top: 35px;
+                float: left;
+            }
+            span:nth-child(2){
+                font-size: 48px;
+                text-align: center;
+                width: 100%;
+                display: block;
+                float: left;
+            }
+            span:nth-child(3){
+                width: 110px;
+                display: block;
+                position: absolute;
+                top: 35px;
+                float: left;
+                right: 0px;
+            }
+        }  
+        h6{
+            font: 20px '微软雅黑';
+            text-align: center
+        }   
+    } 
+    .goods{
+        @include goods;
+        
+        .text{
+           @include text;
+           span{
+               display: block;
+               margin-right: 12px;
+               font: 18px '微软雅黑';
+           }
+        }
+        .xiu{
+           @include xiu;
+            float: right;
+            .text_xiu{
+               @include text_xiu();
+               p:nth-child(1){
+                   font: 500 24px '微软雅黑';
+                   text-align: center;
+               }
+               p:nth-child(2){
+                   width: 40px;
+                   border: 2px solid rgb(87, 78, 78);
+                   margin: 13px 105px ;
+               }
+               p:nth-child(3){
+                   font:20px '微软雅黑';
+                   margin-top: 5px;
+               }
+            }
+            .text_xiu:nth-child(3){
+                margin-right: 0px
+            }
+        }
+        >img:nth-child(1){
+            float: left;
+        }
+        >.img_{
+            width:920px;
+            height: 390px;
+            background: url('../imgs/index/wood.png');
+            position: absolute;
+            top: 192px;
+            left: 215px;
+            z-index: -1;
+        }
+        .text_bottom{
+            position: absolute;
+            bottom: 30px;
+            right: 0px;
+            width: 249px;
+            height: 112px;
+            border: 1px solid #B3B3B3;
+            z-index: 2;
+            .center{
+                width: 180px;
+                height: 55px;
+                margin:0 auto;
+                margin-top: 20px;
+                font: 20px '微软雅黑';
+                p{
+                    text-align: center;
+                    padding-top: 10px
+                }
+            }
+        }
+        .img{
+            position: absolute;
+            left: 153px;
+            top: 170px;
+            width: 940px;
+            height: 390px;
+            background: url("../imgs/index/embroidery.png")no-repeat 100% 100%
+            }
+    }
+}
+.hot_all2{
+    width: 100%;
+    height: 688px;
+    .hot_pull{
+        width: 1200px;
+        height: 100%;
+        .goods{
+            margin-top: 0px;
+        >img:nth-child(1){
+            float:right;
+        }
+        .text{
+            @include text;
+            right: 100px;
+        }
+        .xiu{
+            @include xiu;
+            float: left;
+            .xiu_text:nth-child(3){
+                margin-right: 0px
+            }
+            .xiu_text{
+                @include text_xiu;
+                float: left;
+                p:nth-child(1){
+                    font: 500 24px '微软雅黑';
+                    text-align: center;
+                }
+                p:nth-child(2){
+                    width: 40px;
+                    border: 2px solid rgb(87, 78, 78);
+                    margin: 13px 105px ;
+                }
+                p:nth-child(3){
+                    font:20px '微软雅黑';
+                    margin-top: 5px;
+                }
+            };
+        };
+        .img{
+            position: absolute;
+            left: 80px;
+            top: 170px;
+            width: 940px;
+            height: 390px;
+            background: url("../imgs/index/wood.png")no-repeat 100% 100%
+        };
+        .text_bottom{
+            position: absolute;
+            bottom: 30px;
+            left:  0px;
+            width: 249px;
+            height: 112px;
+            border: 1px solid #B3B3B3;
+            z-index: 2;
+            .center{
+                width: 180px;
+                height: 55px;
+                margin:0 auto;
+                margin-top: 20px;
+                font: 20px '微软雅黑';
+                p{
+                    text-align: center;
+                    padding-top: 10px
+                }
+            }
+        };
+        .more_{
+            margin:0 auto;
+            width: 100px;
+            height: 34px;
+            border: 1px solid red;
+            line-height: 34px;
+            text-align: center
+        }
+    }}
+}
+.hot_all3{
+    width: 100%;
+    height: 800px;
+}
+

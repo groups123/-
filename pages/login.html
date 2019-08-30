@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../sass/login.css">
+    <script src="../js/login.js"></script>
+  
+</head>
+
+<div class="login_bg">
+    <!-- 标题部分 -->
+    <div class="login_login">
+        <h1>匠心造物</h1>
+        <p><span>手工之美</span><span>匠人之心</span></p>
+        <!-- 用户登录表单 -->
+        <form>
+            <div class="login_user ">
+                <!-- tab切换 -->
+                <div class="password"><span class="show_">免密登录</span><span>密码登录</span></div>
+                <!-- 切换内容 -->
+                <div class="tab tab1">
+                    <!-- 手机号 -->
+                    <div class="phone">
+                        <span>中国+86</span>
+                        <span></span>
+                        <input type="text" placeholder="手机号" class="true_ true_phone">
+                    </div>
+                    <div class="line"></div>
+                    <div class="yanzheng">
+                        <input type="text" placeholder="输入6位短信验证码" class="true_ true_yanzheng">
+                        <span class="getyanzheng">获取验证码</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="agret">
+                        <input type="checkbox">
+                        <span>我已阅读并同意<span>《用户协议》</span>和<span>《隐私协议》</span></span>
+                    </div>
+                    <button>进入匠心查物首页</button>
+                    <div class="copy">
+                        <p>&copy;2019匠心京ICP证110745号京公网安备11010802010035号出版物经营许可证</p>
+                        <p>侵权举报网上有害信息举报专区儿童色情信息举报专区违法和不良信息举报：010-82716601</p>
+                    </div>
+                </div>
+                <div class="tab ">
+                    <div class="phone">
+                        <span>手机号</span>
+                        <span></span>
+                        <input type="text" placeholder="请输入正确手机号" class="true_ true_phone">
+                    </div>
+                    <div class="line"></div>
+                    <div class="yanzheng">
+                        <input type="password" placeholder="密码" class="true_ true_pass" >
+                        <span class="getyanzheng iconfont icon-biyan"></span>
+                        <span class="getyanzheng iconfont icon-zhengyan"></span>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="agret">
+                        <input type="checkbox">
+                        <span>我已阅读并同意<span>《用户协议》</span>和<span>《隐私协议》</span></span>
+                    </div>
+                    <button type="submit">进入匠心查物首页</button>
+                    <div class="copy">
+                        <p>&copy;2019匠心京ICP证110745号京公网安备11010802010035号出版物经营许可证</p>
+                        <p>侵权举报网上有害信息举报专区儿童色情信息举报专区违法和不良信息举报：010-82716601</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<script>
+    $('.password>span').click(function () {
+        var index = $(this).index();
+        console.log(index)
+        $(this).addClass('show_').siblings().removeClass('show_');
+        $('.tab').eq(index).addClass('tab1').siblings().removeClass('tab1');
+    })
+
+
+</script>
+
+<body>
+
+
+
+</body>
+
+</html>

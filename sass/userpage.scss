@@ -1,0 +1,169 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul,li,a {
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+.user{
+    // 个人中心
+    width: 991px;
+    height: 857px;
+    margin-top: 60px;
+    // 普通用户
+    .userLeft{
+        width: 210px;
+        background-color: #f4f4f4;
+        float: left;
+        box-sizing: border-box;
+        .normal-user{
+            padding-top: 42px;
+            li:nth-child(2),li:nth-child(3){
+                margin-top: 19px;
+            }
+            li:nth-child(1){
+                padding-left: 19px;
+                font-size: 20px;
+            }
+            li:nth-child(2){
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+               a{
+                    padding-left: 19px;
+                }
+            }
+            li:nth-child(3){
+                border-top: 1px solid #cccccc;
+            }
+        }//
+        // 个人资料
+        .changeMsg{
+            li:nth-child(1){
+                width: 100%;
+               height: 50px;
+               line-height: 50px;
+               font-size: 20px;
+               a{
+                   padding-left: 19px;
+               }
+            }
+            li:nth-child(2){
+                border-top: 1px solid #cccccc;
+            }
+        }
+        // 手艺人
+       .artisan{
+           padding-top: 19px;
+           li:nth-child(2),li:nth-child(3),li:nth-child(4){
+               width: 100%;
+               height: 50px;
+               margin-top: 19px;
+               line-height: 50px;
+               a{
+                   padding-left: 19px;
+               }
+            }
+            div{
+                font-size: 20px;
+                padding-left: 19px;
+            }
+       } 
+    }
+    .userRight{
+        width: 763px;
+        height: 100%;
+        display: inline-block;
+        margin-left: 13px;
+    }
+    .userHeader{
+        width: 100%;
+        height: 163px;
+        background: #cccccc;
+        .headMsg{
+            height: 130px;
+            position: relative;top: 21px;
+            .userImg{
+                width: 128px;
+                height: 130px;
+                display: inline-block;
+                margin-left: 18px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .headMsg-right{ 
+                display: inline-block;
+                position: relative;
+                top: -10px;
+                .showUsername{
+                    font-size: 18px;
+                }
+                .toPerfect{
+                    div:nth-child(2),div:nth-child(3){
+                        margin-left: 15px;
+                    }
+                    div:nth-child(4){
+                        font-size: 18px;
+                        margin-left:55px;
+                        a{
+                            color: #936237;
+                        }
+                    }
+                }
+                .artsianMsg{
+                    position: relative;
+                    div:nth-child(2),div:nth-child(3){
+                        margin-left: 37px;
+                    }
+                    .yes{
+                        width: 11px;
+                        height: 11px;
+                        border-radius: 50%;
+                        border: 1px solid #936237;
+
+                        &::after{
+                            content: "√";
+                            color:#936237;
+                            font-weight: bolder;
+                            position: absolute;
+                            top: -1px;
+                        }
+                    }
+                }
+               .toPerfect , .artsianMsg{
+                margin-top: 22.5px;
+                   font-size: 14px;
+                   color: #787878;
+                   div{
+                       display: inline-block;
+                   }
+                   .msgSkill{
+                       display: inline-block;
+                       border: 1px solid;
+                       background: #e8e8e8;
+                       border-radius:5px;
+                       width: 214px;
+                       height: 11px;
+                       .skillChild{
+                           float: left;
+                           width: 60%;
+                           height: 11px;
+                           border-radius: 5px;
+                           background: #936237;
+                       }
+                   }
+               }
+            }
+        }
+    }
+}
+.gotoRevise{
+    a{
+        color: #936237;
+    }
+}

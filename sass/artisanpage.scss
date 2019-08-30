@@ -1,0 +1,119 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+
+}
+
+.artisanLife{
+    margin-top: 48px;
+    width: 62.5%;
+    position: relative;
+    .artisanLeft{
+        display: inline-block;
+        width: 301px;
+        height: 560px;
+        background-color: #a6946a;
+        border-radius: 10px;
+        margin-top: 60px;
+        margin-left: 48px;
+        background: url(../imgs/个人集/p2375964999.png);
+        box-shadow: -48px -60px  #a6946a;
+    }
+    .artisanRight{
+        width: 62%;
+        text-align: center;
+        display: inline-block;
+        margin-left: 2%;
+        position: absolute;
+        top: 12%;
+        div{
+            font-size: 48px;
+        }
+        p{
+            text-align: left;
+            font-size: 20px;
+            margin-top: 32px;
+        }
+    }
+}
+.artisanWorks{
+    text-align: center;
+    margin-top: 44px;
+    div:nth-child(1){
+        font-size: 48px;
+    }
+    div:nth-child(2){
+        font-size: 24px;
+    }
+}
+.showWorks{
+    margin-top: 115px;
+    width: 68%;
+    padding-bottom: 100px;
+    div{
+        border-radius: 12px;
+        img{
+            transition: .5s;
+            &:hover{
+                transform: scale(1.05);
+                transition: .5s;
+            }
+        }
+    }      
+    .worksTop{
+        display: flex;
+        
+        div:nth-child(1){
+            box-shadow: -52px -71px  #a6946a;
+        }
+        div:nth-child(4){
+            box-shadow: 52px 61px  #a6946a;
+        }
+        div:nth-child(1),div:nth-child(4){
+            width: 21.6%;
+            img{
+                height: 100%;
+            }
+            
+        }  
+        div:nth-child(2),div:nth-child(3){
+            width: 22.6%;
+        }
+    }
+    .worksBottom{
+        display: flex;
+        margin-top: 145px;
+      div{
+        border-radius: 10px;
+        a{
+            text-align: center;
+            color: #444444;
+            .worksLine{
+                margin-top: 13px;
+                width:50%;
+                border-top: 1.5px solid #444444;
+            }
+            p{  
+                margin-top: 12px;
+                font-size: 18px;
+            }
+        }
+      }
+        div:nth-child(1){
+            width: 37.6%;
+            height: 13%;
+            box-shadow: 0 -36px #7d7b48;
+        }
+        div:nth-child(3){
+            margin-top: 129px;
+        }
+        div:nth-child(2),div:nth-child(3),div:nth-child(4){
+            width: 15.3%;
+            height: 179px;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin distance($top,$left) {
+    margin-top: $top;
+    margin-left: $left;
+}
+@mixin style_($typeface,$colors,$crude){
+    font-size: $typeface;
+    color:$colors;
+    font-weight: $crude;
+}
+@mixin box_($width_,$height_){
+    width:$width_;
+    height: $height_;
+}
+.banner{
+    @include box_(100%, 650px);
+    background: url(../imgs/Demand/banner.jpg)
+}
+#main{
+    width: 100%;
+    height: 1036px;
+    position: relative;
+}
+#main .word{
+    position: absolute;
+    @include distance(55px,843px);
+    @include style_(58px,#444444,bolder);
+} 
+#main .word1{
+    position: absolute;
+    @include distance(189px,396px);
+    @include style_(24px,#333333,bolder);
+} 
+#main .frame{
+    border: solid 1px #c8c8c8;
+    outline: none;
+    padding-left: 54px;
+    letter-spacing: 2px;
+    @include box_(158px,36px);
+    @include distance(184px,715px);
+    @include style_(14px,#787878,bolder);
+}
+#main .frame1{
+    border: solid 1px #c8c8c8;
+    outline: none;
+    padding-left: 54px;
+    letter-spacing: 2px;
+    @include box_(158px,36px);
+    @include distance(164px,11px);
+    @include style_(14px,#787878,bolder);
+}
+#main .word2{
+    position: absolute;
+    @include distance(37px,420px);
+    @include style_(24px,#333333,bolder);
+} 
+#main .frame2{
+    border: solid 1px #c8c8c8;
+    outline: none;
+    padding-left: 54px;
+    letter-spacing: 2px;
+    @include box_(158px,36px);
+    @include distance(30px,715px);
+    @include style_(14px,#787878,bolder);
+}
+#main .word3{
+    position: absolute;
+    @include distance(-30px,894px);
+    @include style_(24px,#bababa,bolder);
+} 
+#main .word4{
+    position: absolute;
+    @include distance(39px,492px);
+    @include style_(24px,#333333,bolder);
+}
+#main .ipt_{
+    outline: none;
+    position: absolute;
+    padding-left: 5px;
+    @include box_(200px,36px);
+    @include distance(100px,-160px);
+    @include style_(14px,#787878,bolder);
+} 
+#main .word5{
+    position: absolute;
+    @include distance(101px,372px);
+    @include style_(24px,#333333,bolder);
+} 
