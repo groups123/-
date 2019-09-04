@@ -1,0 +1,210 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin distance($top,$left) {
+    margin-top: $top;
+    margin-left: $left;
+}
+@mixin style_($typeface,$colors,$crude){
+    font-size: $typeface;
+    color:$colors;
+    font-weight: $crude;
+}
+@mixin box_($width_,$height_){
+    width:$width_;
+    height: $height_;
+}
+#main{
+    @include box_(100%, 1336px);
+    border: 1px solid white;
+    position: relative;
+    .box{
+        @include box_(652px, 652px);
+        @include distance(44px,359px);
+        position: absolute;
+        img{
+            @include box_(652px, 652px);
+        }
+    }
+    .word{
+        position: absolute;
+        @include distance(51px,1012px);
+        @include style_(25px,#333333,bolder);
+        @include box_(240px, 20px);
+        letter-spacing: 1px
+    }
+    .word1{
+        position: absolute;
+        @include distance(108px,1010px);
+        @include style_(25px,#333333,bolder);
+        @include box_(70px, 20px);
+        letter-spacing: 1px
+    }
+    .box1{
+        position: absolute;
+        border: solid 1px #bfbfbf;
+        @include box_(167px, 45px);
+        @include distance(160px,1012px);
+        text-align: center;
+        color: #7f7f7f;
+        line-height: 45px;
+    }
+    .btn{
+        position: absolute;
+        border: solid 1px #bfbfbf;
+        @include box_(45px, 45px);
+        @include distance(160px,1012px);
+        outline: none;
+    }
+    .btn1{
+        position: absolute;
+        border: solid 1px #bfbfbf;
+        @include box_(45px, 45px);
+        @include distance(160px,1134px);
+        outline: none;
+    }
+    .box2{
+        position: absolute;
+        border: solid 1px #bfbfbf;
+        @include box_(548px, 45px);
+        @include distance(248px,1012px);
+        text-align: center;
+        color: #7f7f7f;
+        line-height: 45px;
+    }
+    .word2{
+        position: absolute;
+        @include distance(335px,1013px);
+        @include style_(20px,#333333,800);
+        @include box_(90px, 20px);
+        letter-spacing: 1px
+    }
+    .word3{
+        position: absolute;
+        @include distance(367px,1012px);
+        @include style_(13.5px,#333333,400);
+        @include box_(70px, 20px);
+        letter-spacing: 1px
+    }
+    .word4{
+        position: absolute;
+        @include distance(393px,1012px);
+        @include style_(13.5px,#333333,400);
+        @include box_(70px, 20px);
+        letter-spacing: 1px
+    }
+    .word5{
+        position: absolute;
+        @include distance(416px,1012px);
+        @include style_(13.5px,#333333,400);
+        @include box_(80px, 20px);
+        letter-spacing: 1px
+    }
+    .word6{
+        position: absolute;
+        @include distance(440px,1012px);
+        @include style_(13.5px,#333333,400);
+        @include box_(80px, 20px);
+        letter-spacing: 1px
+    }
+    .box3{
+        position: absolute;
+        @include box_(147px, 147px);
+        @include distance(483px,1012px);
+        img{
+            @include box_(147px, 147px);
+        }
+    }
+    .word7{
+        position: absolute;
+        @include distance(505px,1189px);
+        @include style_(20px,#333333,600);
+        @include box_(65px, 20px);
+        letter-spacing: 1px
+    }
+    .word8{
+        position: absolute;
+        @include distance(566px,1189px);
+        @include style_(13.5px,#333333,400);
+        @include box_(367px, 64px);
+        letter-spacing: 2px;
+        line-height: 20px
+    }
+    .word9{
+        position: absolute;
+        @include distance(658px,1012px);
+        @include style_(20px,#333333,600);
+        @include box_(90px, 20px);
+        letter-spacing: 1px
+    }
+    .word10{
+        position: absolute;
+        @include distance(690px,1012px);
+        @include style_(13.5px,#333333,400);
+        @include box_(543px, 136px);
+        letter-spacing: 2px;
+        line-height: 22px;
+    }
+    .box4{
+        position: absolute;
+        @include box_(102px, 102px);
+        @include distance(709px,520px);
+        img{
+            @include box_(102px, 102px);
+        }
+    }
+    .box5{
+        position: absolute;
+        @include box_(102px, 102px);
+        @include distance(709px,636px);
+        img{
+            @include box_(102px, 102px);
+        }
+    }
+    .box6{
+        position: absolute;
+        @include box_(102px, 102px);
+        @include distance(709px,752px);
+        img{
+            @include box_(102px, 102px);
+        }
+    }
+    .line{
+        @include distance(853px,360px);
+        @include box_(1200px, 1px);
+        background-color: #000000;
+    }
+    .word11{
+        position: absolute;
+        @include distance(42px,361px);
+        @include style_(20px,#333333,600);
+        @include box_(90px, 20px);
+        letter-spacing: 1px
+    }
+    .box7{
+        position: absolute;
+        @include box_(366px, 366px);
+        @include distance(89px,360px);
+        img{
+            @include box_(366px, 366px);
+        }
+    }
+    .box8{
+        position: absolute;
+        @include box_(366px, 366px);
+        @include distance(89px,776px);
+        img{
+            @include box_(366px, 366px);
+        }
+    }
+    .box9{
+        position: absolute;
+        @include box_(366px, 366px);
+        @include distance(89px,1192px);
+        img{
+            @include box_(366px, 366px);
+        }
+    }
+}

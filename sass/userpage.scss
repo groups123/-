@@ -1,19 +1,18 @@
 *{
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 0;
+    color: #444444;
 }
 ul,li,a {
     list-style: none;
     text-decoration: none;
 }
-a{
-    color: black;
-}
+
 .user{
     // 个人中心
     width: 991px;
     height: 857px;
-    margin-top: 60px;
+    margin-top: 60px !important;
     // 普通用户
     .userLeft{
         width: 210px;
@@ -22,55 +21,35 @@ a{
         box-sizing: border-box;
         .normal-user{
             padding-top: 42px;
-            li:nth-child(2),li:nth-child(3){
-                margin-top: 19px;
-            }
-            li:nth-child(1){
-                padding-left: 19px;
-                font-size: 20px;
-            }
-            li:nth-child(2){
-                width: 100%;
-                height: 50px;
-                line-height: 50px;
-               a{
-                    padding-left: 19px;
-                }
-            }
-            li:nth-child(3){
+            font-size: 20px;
+            padding-left: 19px;
+            .normal-line{
                 border-top: 1px solid #cccccc;
-            }
-        }//
-        // 个人资料
-        .changeMsg{
-            li:nth-child(1){
-                width: 100%;
-               height: 50px;
-               line-height: 50px;
-               font-size: 20px;
-               a{
-                   padding-left: 19px;
-               }
-            }
-            li:nth-child(2){
-                border-top: 1px solid #cccccc;
-            }
-        }
-        // 手艺人
-       .artisan{
-           padding-top: 19px;
-           li:nth-child(2),li:nth-child(3),li:nth-child(4){
-               width: 100%;
-               height: 50px;
-               margin-top: 19px;
-               line-height: 50px;
-               a{
-                   padding-left: 19px;
-               }
+               margin-left: -19px;
+               height: 0;
             }
             div{
-                font-size: 20px;
+                font-size: 16px;
+                margin-top: 16px !important;
+                margin-left: -19px !important;
                 padding-left: 19px;
+                height: 50px;
+                line-height: 50px;
+            }
+            }
+        }//
+        // 手艺人
+       .artisan{
+           padding-top: 31px;
+           font-size: 20px;
+           padding-left: 19px;
+           div{
+               margin-top: 16px !important;
+               margin-left: -19px !important;
+               padding-left: 19px;
+               height: 50px;
+               line-height: 50px;
+               font-size: 16px;
             }
        } 
     }
@@ -78,12 +57,12 @@ a{
         width: 763px;
         height: 100%;
         display: inline-block;
-        margin-left: 13px;
+        margin-left: 13px !important;
     }
     .userHeader{
         width: 100%;
         height: 163px;
-        background: #cccccc;
+        background: #f4f4f4;
         .headMsg{
             height: 130px;
             position: relative;top: 21px;
@@ -91,25 +70,24 @@ a{
                 width: 128px;
                 height: 130px;
                 display: inline-block;
-                margin-left: 18px;
+                margin-left: 18px !important;
+                float: left;
                 img{
                     border-radius: 50%;
                 }
             }
             .headMsg-right{ 
                 display: inline-block;
-                position: relative;
-                top: -10px;
                 .showUsername{
                     font-size: 18px;
                 }
                 .toPerfect{
                     div:nth-child(2),div:nth-child(3){
-                        margin-left: 15px;
+                        margin-left: 15px !important;
                     }
                     div:nth-child(4){
                         font-size: 18px;
-                        margin-left:55px;
+                        margin-left:55px !important;
                         a{
                             color: #936237;
                         }
@@ -118,7 +96,7 @@ a{
                 .artsianMsg{
                     position: relative;
                     div:nth-child(2),div:nth-child(3){
-                        margin-left: 37px;
+                        margin-left: 37px !important;
                     }
                     .yes{
                         width: 11px;
@@ -131,12 +109,12 @@ a{
                             color:#936237;
                             font-weight: bolder;
                             position: absolute;
-                            top: -1px;
+                            top: 0;
                         }
                     }
                 }
                .toPerfect , .artsianMsg{
-                margin-top: 22.5px;
+                margin-top: 22.5px !important;
                    font-size: 14px;
                    color: #787878;
                    div{
@@ -155,15 +133,420 @@ a{
                            height: 11px;
                            border-radius: 5px;
                            background: #936237;
+                           margin-left: -1px !important;
                        }
                    }
                }
             }
         }
     }
-}
+.userChosen-more{
+    background: #f4f4f4;
+    width: 100%;
+    margin-top: 16px !important;
+    padding-bottom: 25px !important;
+    //显示资料
+    .showuserMsg-title{
+        @extend .chosenTitle
+    }
+    .showuserContent{
+        width: 94%;
+        div{
+            div{
+                display: inline-block;
+                margin-top: 50px !important;
+            }
+            div:nth-child(1){
+                width: 100px;
+            }
+        }
+        .contentTitle-revise{
+            text-align: center;
+            position: relative;
+            bottom: -80px;
+            input{
+                @extend .getthis
+            }
+        }
+        }
+    }
+    .forDisplay{
+          display: none;
+    }
+    // 修改资料
+    .chosenTitle{
+        width: 94%;
+        height: 58px;
+        border-bottom: 1.5px solid #d2d2d2;
+        line-height: 58px;
+        font-size: 18px;
+        color: #444444;   
+    }
+    .chosenContent{
+        width: 94%;
+        .content-title_input{
+            >div{
+                margin-top: 37px !important;
+            }
+            div div{
+                display: inline-block;
+            }
+            .moveBox{
+                width: 350px;
+            }
+            .headPic{
+                margin-top: 6px !important;
+                #picUp{
+                    margin-left: 21px !important;
+                }
+                .layui-upload-list{
+                    margin-left: 10px !important;
+                }
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .userName{
+                .nameInput{
+                    margin-left: 27px !important;
+                }
+            }
+            .bornYear{
+                input{
+                    margin-left: 13px !important;
+                }
+            }
+            .sex{
+                >div{
+                    margin-left: 39px !important;
+                }
+            }   
+            .consignee{
+                input{
+                    margin-left: 26px !important;
+                }
+            }
+            .contactWay{
+                input{
+                    margin-left: 12px !important;
+                }
+            }
+            .address{
+                .addressMove{
+                    margin-left:11px !important ;
+                }
+               .layui-input{
+                   width: 150px;
+                    height: 30px;
+                }
+            }
+            .profile{
+                div{
+                    position: relative;
+                    top: -58px;
+                }
+                textarea{
+                    margin-left: 11px !important;
+                }
+            }
+        }
+    } 
+      // 我的订单
+      .myOrder-title{
+        @extend .chosenTitle ;
+    }
+    .orderList{
+        width: 95%;
+        height: 510px;
+        margin-top: 15px !important;
+            .getOrder-title{
+                background: #cbcbcb;
+                height: 32px;
+                font-size: 12px;
+                div{
+                    display: inline-block;
+                    line-height: 32px;
+                }
+                .getOrder-title1{
+                    margin-left: 24.5% !important;
+                    margin-right: 31.5% !important;
+                }
+                div:nth-child(3),div:nth-child(4){
+                    margin-left: 9% !important;
+                }
+            }
+            .orderList-title{
+                background: #cbcbcb;
+                height: 32px;
+                font-size: 12px;
+                div{
+                    display: inline-block;
+                    line-height: 32px;
+                }
+                .orderList-title1{
+                    margin-left: 13.5% !important;
+                }
+               div:nth-child(2){
+                    margin-left: 16% !important;
+                }
+                div:nth-child(3),div:nth-child(4),div:nth-child(5){
+                    margin-left: 12% !important;
+                }
+            }
+        .orderList-content{
+            .orderList-content_child{
+                height: 96px;
+                background: #ffffff;
+                div{
+                    display: inline-block;
+                }
+                .child_worksPic{
+                    margin-left: 6px !important;
+                    line-height: 96px;
+                }
+                .getOrder-need{
+                    width: 300px;
+                    p:nth-child(2){
+                        font-size: 12px;
+                        color: #787878;
+                        position: relative;
+                        top:10px;
+                    }
+                }
+                .child_worksTitle{
+                    width: 148px;
+                    position: relative;
+                    top: 5px;
+                    left: 5px;
+                    p:nth-child(2){
+                        font-size: 12px;
+                        color: #787878;
+                        position: relative;
+                        top: 13px;
+                    }
+                }
+                .child_worksLast4{
+                    margin-left: 4.3% !important;
+                    div{
+                        font-size: 13.5px;
+                        color: #787878;
+                    }
+                    div:nth-child(2),div:nth-child(3),div:nth-child(4){
+                        padding-left: 6.35rem !important;
+                    }
+                    div:nth-child(3){
+                        position: relative;
+                        left: 12.5px;
+                    }
+                }
+                .getOrder_last3{
+                    div{
+                        font-size: 13.5px;
+                    }
+                    div:nth-child(1){
+                        margin-left: 2.8rem !important;
+                    }
+                    div:nth-child(2){
+                        margin-left: 5rem !important;
+                    }
+                    div:nth-child(3){ 
+                        margin-left: 4rem !important;                      
+                        width: 80px;
+                        height: 30px;
+                        background-color: #936237;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 30px;
+                        a{
+                            color: #ffffff;
+                        }
+                    }
+                }   
+            }  
+        }             
+    }//
+    // 我的作品
+    .myWorks{
+        @extend .chosenTitle ;
+        position: relative;
+        .load-newWorks{
+            width: 110px;
+            height: 30px;
+            background-image: linear-gradient(0deg,#684323 0%,#936237 100%);
+            border-radius: 5px;
+            position: absolute;
+            right: 0;
+            top: 15px;
+            line-height: 30px;
+            text-align: center;
+            a{
+                font-size: 14px;
+                color: #ffffff;
+            }
+        }
+    }
+    .myWorks-content{
+        @extend .orderList ;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    // 手艺人认证
+    @mixin ident_but {
+    width: 150px;
+    height: 40px;
+    background-color: #7F5430;
+    text-align: center;
+    line-height: 40px;
+    margin: 35px auto;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    }
+    .ident{
+        width: 95%;
+    .ident_width{     
+        .ident_title{
+            width: 100%;
+            height: 50px;
+            line-height: 68px;
+        }
+        .process{
+            text-align: center;
+            position: relative;
+            left: 12.6rem;
+            .process1,.process2,.process3,.process4{
+                width: 78px;
+                height: 60px;
+                float: left;
+                margin-right: 49px;
+                position: relative;
+                .pro_radius{
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    background-color: #C8C8C8;
+                    margin: 0 auto;
+                    text-align: center;
+                    line-height: 28px;
+                    span{
+                        color: white;
+                    }
+                   
+            }
+            .real_bg{
+                background-color: #906038;
+            };
+            .rel_color{
+                color: #906038!important;
+            }
+            .real_name{
+                text-align: center;
+                margin-top: 10px;
+                color: #C8C8C8;
+            };
+            >.line_{
+                width: 99px;
+                position: absolute;
+                border: 1px solid #C8C8C8;
+                top: 14px;
+                left: 53px;
+            };
+            .real_bg2{
+                border: 1px solid #906038;
+            }
+        }
+    }}
+    .ident_sub{
+        width: 100%;
+        height: auto;
+      
+    .ident_ifor{
+        width: 100%;      
+        .layui-form-item{
+            margin-top: 35px !important;
+            .layui-input,select,.layui-form-select{
+                    width: 300px!important;
+                    float: left;
+            };
+            .layui-edge{
+                left: 270px;
+            };
+            select{
+                width: 300px;
+            }
+        };
+        .layui-upload{
+            margin-top: 25px;
+            #demo2{
+                margin-top: 35px;
+               
+            }
+        };
+        .ident_but{
+            @include ident_but;
+        }
+    }
+    .ident_work{
+        display: none;
+        .pros_citys{
+    margin-top: 20px;
+    height: 50px;;
+    //  
+    };
+    .layui-form{      
+        .layui-form-item{
+            margin-top: 35px !important;
+            input{
+                width: 300px;
+                float: left;
+            }
+        };
+        .layui-form-item:nth-child(1){
+            input{
+                width: 100px;
+            }
+            i{
+                float: left;
+                position: relative !important;
+                left: -20px;
+                top: 10px;
+            }
+        }
+        .ident_but2{
+           @include ident_but;
+        }
+    }
+    }
+    }
+    }//
 .gotoRevise{
     a{
         color: #936237;
     }
+}
+.confirm_cancel{
+    text-align: center;
+    position: relative;
+    bottom: -80px;
+    .confirm , .cancel{
+        @extend .getthis
+    }
+    .cancel{
+        background-image: linear-gradient(0deg, #936237 0%, #ab794c 100%) !important;
+        margin-left: 42px !important;
+    }
+}
+input{
+    color: #787878;
+    font-size: 12px;
+}
+.getthis{
+    width: 80px;
+    height: 30px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(0deg, #684323 0%, #936237 100%);
 }

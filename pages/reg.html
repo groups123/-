@@ -7,28 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
     <link rel="stylesheet" href="../sass/reg.css">
+    <script src="../js/jquery.js"></script>
+    <!-- <script  type="module" src="../js/login.js"></script> -->
+    <script  type="module" src="../js/reg.js"></script>
 </head>
 <body>
     <div class="reg_bg">
+        <!-- 标题 -->
         <div class="reg_reg">
             <h1>匠心造物</h1>
             <p><span>手工之美</span><span>匠人之人</span></p>
+            <!-- 用户信息 -->
             <div class="reg_user">
+                <div class="reg_width">
                 <div class="back">
                     <返回</div> <h3>设置用户名和密码</h3>
                     <div class="ifor">
-                        <input class="user_name" type="text" placeholder="用户名">
+                        <input class="user_name user_reg" type="text" placeholder="手机号"><span class="res"></span>
                         <div class="user_line"></div>
-                        <input class="user_name" type="password" placeholder="8位数字或字母密码">
+                        <input class="user_name pass_reg" type="password" placeholder="6-16个英文字母和数字"><span class="res"></span>
                         <div class="user_line"></div>
-                        <input class="user_name" type="password" placeholder="确认密码">
+                        <input class="user_name repass_val" type="password " placeholder="确认密码"><span class="res"></span>
                         <div class="user_line"></div>
-                        <button>进入匠心查物首页</button>
-                        <div class="copy">
+                        <button class="normal_submit user_submit" id="users">注册/登陆</button>                        <div class="copy">
                             <p>&copy;2019匠心京ICP证110745号京公网安备11010802010035号出版物经营许可证</p>
                             <p>侵权举报网上有害信息举报专区儿童色情信息举报专区违法和不良信息举报：010-82716601</p>
                         </div>
                 </div>
+            </div>
             </div>
         </div>
 

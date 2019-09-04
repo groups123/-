@@ -36,53 +36,64 @@
 .reg_bg .reg_reg > .reg_user {
   background-color: #F0F0F0;
   width: 500px;
-  height: 450px;
+  height: 480px;
   margin-top: 40px;
+  border-radius: 5px;
 }
 
-.reg_bg .reg_reg > .reg_user .back {
+.reg_bg .reg_reg > .reg_user .reg_width {
+  width: 380px;
+}
+
+.reg_bg .reg_reg > .reg_user .reg_width .back {
   font: 12px '微软雅黑';
-  padding: 10px 20px;
-}
-
-.reg_bg .reg_reg > .reg_user > h3 {
-  text-align: center;
-  font: 450 16px '黑体';
-  text-shadow: 2px 2px 2px #C0C0C0;
   padding-top: 20px;
 }
 
-.reg_bg .reg_reg > .reg_user > .ifor .user_name {
+.reg_bg .reg_reg > .reg_user .reg_width > h3 {
+  text-align: center;
+  font: 16px '黑体';
+  text-shadow: 2px 2px 2px #C0C0C0;
+  padding-top: 10px;
+}
+
+.reg_bg .reg_reg > .reg_user .reg_width > .ifor .user_name {
   border: none;
   outline: none;
-  padding-top: 50px;
-  padding-left: 20px;
+  padding-top: 45px;
   background-color: #F0F0F0;
   font: 500 12px '微软雅黑';
   color: black;
+  width: 300px;
 }
 
-.reg_bg .reg_reg > .reg_user > .ifor > .user_line {
-  width: 460px;
+.reg_bg .reg_reg > .reg_user .reg_width > .ifor .res {
+  color: red;
+  font: 14px '微软雅黑';
+}
+
+.reg_bg .reg_reg > .reg_user .reg_width > .ifor > .user_line {
+  width: 100%;
   border: 0.5px solid #a79595;
   margin-top: 15px;
 }
 
-.reg_bg .reg_reg > .reg_user > .ifor > button {
-  width: 460px;
+.reg_bg .reg_reg > .reg_user .reg_width > .ifor > button {
+  width: 100%;
   padding: 7px;
-  margin-left: 20px;
   border-radius: 10px;
   background-color: #B3B3B3;
   margin-top: 60px;
   outline: none;
+  border: 1px solid #B3B3B3;
+  color: white;
 }
 
-.reg_bg .reg_reg > .reg_user > .ifor .copy {
+.reg_bg .reg_reg > .reg_user .reg_width > .ifor .copy {
   margin-top: 250px;
 }
 
-.reg_bg .reg_reg > .reg_user > .ifor .copy > p {
+.reg_bg .reg_reg > .reg_user .reg_width > .ifor .copy > p {
   font: 12px '微软雅黑';
   color: #F0F0F0;
   text-align: center;

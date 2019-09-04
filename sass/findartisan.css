@@ -12,31 +12,34 @@ img {
 }
 
 .showSome-artisan {
+  position: relative;
   display: flex;
-  width: 63%;
+  width: 1200px;
+  padding-bottom: 35px;
 }
 
-.showSome-artisan > div:hover img {
+.showSome-artisan > div > div:hover img {
   transform: scale(1.01);
   transition: .5s;
 }
 
-.showSome-artisan > div:hover .findMsg {
+.showSome-artisan > div > div:hover .findMsg {
   transform: scale(1.01);
   transition: .5s;
   height: 72px;
 }
 
-.showSome-artisan > div:nth-child(1) {
-  height: 531px;
-}
-
-.showSome-artisan > div:nth-child(2) {
-  height: 483px;
-}
-
 .showSome-artisan > div {
   width: 28.42%;
+  position: relative;
+  margin-right: 36px;
+}
+
+.showSome-artisan > div > div:nth-child(2), .showSome-artisan > div div:nth-child(3) {
+  margin-top: 38px;
+}
+
+.showSome-artisan > div > div {
   position: relative;
 }
 
@@ -48,7 +51,7 @@ img {
   overflow: hidden;
   transition: .5s;
   position: absolute;
-  bottom: -2.5px;
+  bottom: 0;
 }
 
 .showSome-artisan > div .findMsg .thisTitle {

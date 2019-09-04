@@ -104,6 +104,7 @@
 }
 
 #main .ipt_ {
+  border: solid 1px #c8c8c8;
   outline: none;
   position: absolute;
   padding-left: 5px;
@@ -122,5 +123,121 @@
   margin-left: 372px;
   font-size: 24px;
   color: #333333;
+  font-weight: bolder;
+}
+
+#main .ipt1_ {
+  border: solid 1px #c8c8c8;
+  outline: none;
+  position: absolute;
+  width: 400px;
+  height: 36px;
+  margin-top: 160px;
+  margin-left: -160px;
+}
+
+#main .word6 {
+  position: absolute;
+  margin-top: 161px;
+  margin-left: 614px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bolder;
+}
+
+#main .ipt2_ {
+  border: solid 1px #c8c8c8;
+  outline: none;
+  position: absolute;
+  width: 68px;
+  height: 36px;
+  margin-top: 160px;
+  margin-left: 260px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: bolder;
+  padding-left: 15px;
+}
+
+#main .ipt3_ {
+  border: solid 1px #c8c8c8;
+  outline: none;
+  position: absolute;
+  width: 363px;
+  height: 36px;
+  margin-top: 222px;
+  margin-left: -160px;
+}
+
+#main .word7 {
+  position: absolute;
+  margin-top: 223px;
+  margin-left: 586px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bolder;
+}
+
+#main .ipt4_ {
+  border: solid 1px #c8c8c8;
+  outline: none;
+  position: absolute;
+  width: 363px;
+  height: 36px;
+  margin-top: 282px;
+  margin-left: -160px;
+}
+
+#main .word8 {
+  position: absolute;
+  margin-top: 283px;
+  margin-left: 587px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bolder;
+}
+
+#main .ipt5_ {
+  border: solid 1px #c8c8c8;
+  outline: none;
+  position: absolute;
+  width: 363px;
+  height: 36px;
+  margin-top: 347px;
+  margin-left: -160px;
+}
+
+#main .word9 {
+  position: absolute;
+  margin-top: 338px;
+  margin-left: 488px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bolder;
+}
+
+#main .ipt6_ {
+  border: solid 1px #c8c8c8;
+  outline: none;
+  position: absolute;
+  width: 843px;
+  height: 260px;
+  margin-top: 405px;
+  margin-left: -160px;
+  resize: none;
+}
+
+#main .btn {
+  outline: none;
+  position: absolute;
+  border-radius: 5px;
+  background: #936237;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  margin-top: 725px;
+  margin-left: 0px;
+  font-size: 18px;
+  color: #ffffff;
   font-weight: bolder;
 }

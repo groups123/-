@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>定制需求</title>
     <link rel="stylesheet" href="../sass/Demand.css">
+    <link rel="stylesheet" href="../sass/index.css">
+    <script src="../js/jquery.js"></script>
 </head>
+
 <body>
+    <header id="header">
+        <div class="header_width">
+            <div class="logo"></div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li class="scale line_"><a href="#">首页</a></li>
+                        <li><a href="#">发现好物</a></li>
+                        <li><a href="#">寻找手艺人</a></li>
+                        <li><a href="#">招聘手艺人</a></li>
+                        <li><a href="#">工艺定制</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </nav>
+                <div class="sousuo"></div>
+            </div>
+            <div class="header_right">
+                <a href="#"><span class="iconfont icon-sousuo"></span></a>
+                <span></span>
+                <a href="#"><span>注册</span></a>
+                <span></span>
+                <a href="#"><span>登陆</span></a>
+            </div>
+        </div>
+    </header>
+
     <section class="banner"></section>
     <main id="main">
         <p class="word">填写需求</p>
@@ -32,6 +62,120 @@
         <p class="word4">请输入使用的材质:</p>
         <input class="ipt_" type="text" placeholder="乌木">
         <p class="word5">如果您有作品的照片，请上传:</p>
+        <input class="ipt1_" type="text">
+        <input class="ipt2_" type="text" value="浏览">
+        <p class="word6">联系人：</p>
+        <input class="ipt3_" type="text">
+        <p class="word7">联系电话：</p>
+        <input class="ipt4_" type="text">
+        <p class="word8">收货地址：</p>
+        <input class="ipt5_" type="text">
+        <p class="word9">请输入详细的描述:</p>
+        <input class="btn" type="button" value="提交">
+        <textarea class="ipt6_" placeholder="我需要一个……"></textarea>
     </main>
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="line1">
+                <span class=" iconfont icon-shouji"></span>
+                <span>关于我们</span>
+                <span>加入匠心</span>
+                <span>用户协议</span>
+                <span>隐私政策</span>
+                <span>侵权电话</span>
+                <span>企业服务</span>
+                <span>帮助中心</span>
+                <span>联系我们</span>
+                <span>中文</span>
+                <span>English</span>
+                <div class="chat">
+                    <span class=" iconfont icon-wechat"></span>
+                    <span class="iconfont icon-weibo"></span>
+                </div>
+            </div>
+            <div class="line2"></div>
+            <div class="line3">
+                <span>京ICP备11017824号-4</span>
+                <span>|</span>
+                <span> 京ICP证140164号</span>
+                <span>|</span>
+                <span> 网络文化经营许可证&nbsp;京网文|</span>
+                <span>|</span>
+                <span>广播电视节目制作经营许可证（京东）字第06990号</span>
+            </div>
+            <div class="line4">
+                <span>网上有害信息举报专区</span>
+                <span>|</span>
+                <span>不良信息举报电话：-1--56538658</span>
+                <span>|</span>
+                <span>举报邮箱jubao@chool.com.cn</span>
+                <span>|</span>
+                <span>举报邮箱jubao@chool.com.cn</span>
+                <span>|</span>
+                <span>联系电话：010-01010100</span>
+                <span>Copyright&reg;2006-2019匠心</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('nav li').on({
+            mouseenter: function () {
+                $(this).addClass('scale').siblings().removeClass('scale');
+                $(this).addClass('line_').siblings().removeClass('line_');
+            }
+        });
+        $('.icon-sousuo').click(function () {
+            $('.header_width .sousuo').toggle();
+            $('.header_width .nav nav').toggle();
+        })
+
+        $(".btn").on("click", function () {
+        // localStorage.url="http://10.1.0.52:8000/";
+        // Promise.all([
+        //     $.ajax({
+        //        url:localStorage.url+"user_systems/oder",
+        //        type:"post",
+        //        async:true,
+        //        dataType:"json"
+        //     })
+        // ]).then(
+        //     resolve=>{
+        //     test(resolve)
+        //     },
+        //     reject=>{
+        //         console.log(reject)
+        //     }
+        // ) 
+
+        Promise.all([
+        // $.ajax({
+        //   url: "http://127.0.0.1:8080/so",
+        //   type: "get",
+        //   dataType: "json"
+        // }),
+
+        $.ajax({
+          url: "http://10.1.0.52:8000/user_systems/oder/",
+          type: "post",
+          data:{
+            art_type:$(".frame").val(),
+        
+          },
+          dataType: "json",
+          headers:{'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY3NTk3NDEyLCJqdGkiOiJiMDg1YjNjNzdkNWU0NzE4YmJlYzJjZTE5ZDI3MmMwZSIsInVzZXJfaWQiOjUsIm1vYmlsZSI6IjEifQ.i_rsCxpNdSrgbaxdMKHre2j--_p9rGv9VqKROtWftXY'},
+        })
+      ]).then(
+        resolve => {
+          console.log(resolve);
+        },
+        reject => {
+          console.log(reject);
+        }
+      );
+})
+
+    </script>
 </body>
+
 </html>

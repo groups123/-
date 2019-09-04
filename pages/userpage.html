@@ -6,34 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人中心</title>
     <link rel="stylesheet" href="../sass/userpage.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
     <script src="../js/jquery.js"></script>
     <script src="../js/userpage.js"></script>
+    <script src="../layui/layui.js"></script>
 </head>
 <body>
     <div class="user">
-        <!-- 用户选项 -->
+        <!-- 普通用户选项 -->
         <div class="userLeft">
-            <ul class="normal-user">
-                <li>普通用户</li>
-                <li><a>我的定制</a></li>
-                <li></li>
-            </ul>
-            <ul class="changeMsg">
-                <li><a>个人资料</a></li>
-                <li></li>
-            </ul>
-            <ul class="artisan">
-                <div>手艺人</div>
-                <li><a>作品管理</a></li>
-                <li><a>定制消息</a></li>
-            </ul>
+            <div class="normal-user">
+                普通用户
+                <div class="user-msg"><a>个人资料</a></div>
+                <div class="user-order"><a>我的订单</a></div>
+                <div class="normal-line"></div>
+            </div>
+            <!-- 手艺人选项 -->
+            <div class="artisan">
+                    手艺人
+                <div class="user-works"><a>我的作品</a></div>
+                <div class="artisan-check"><a href="">手艺人认证</a></div>
+                <div class="get-order"><a>定制消息</a></div>
+            </div>
         </div>
         <!-- 用户头部信息 -->
         <div class="userRight">
                 <div class="userHeader">
                     <div class="headMsg">
                         <div class="userImg">
-                            <img src="../imgs/个人集/个人集.jpg" width="116px" height="115px">
+                            <img src="../imgs/个人中心/图层8.png" width="116px" height="115px">
                         </div>
                         <div  class="headMsg-right">
                         <div class="showUsername">XXX的匠心造物账号</div>
@@ -57,10 +58,118 @@
                         </div>  
                     </div>
                     </div>
+                            <!-- 用户选项详情 -->
+       <div class="userChosen-more">
+            <div class="forshowDisplay">
+                    <div class="showuserMsg-title">个人资料</div>
+                    <div class="showuserContent">
+                        <div class="contentTitle-username">
+                            <div class="usernameLeft">用户名:</div>
+                            <div class="usernameRight">XXX</div>
+                        </div>
+                        <div class="contentTitle-born">
+                            <div class="usernameLeft">出生年月：</div>
+                            <div class="usernameRight">XXX</div>
+                        </div>
+                        <div class="contentTitle-sex">
+                            <div class="usernameLeft">性别：</div>
+                            <div class="usernameRight">XXX</div>
+                        </div>
+                        <div class="contentTitle-consignee">
+                            <div class="usernameLeft">收货人：</div>
+                            <div class="usernameRight">XXX</div>
+                        </div>
+                        <div class="contentTitle-contactway">
+                            <div class="usernameLeft">联系方式：</div>
+                            <div class="usernameRight">XXX</div>
+                        </div>
+                        <div class="contentTitle-address">
+                            <div class="usernameLeft">收货地址：</div>
+                            <div class="usernameRight">XXX</div>
+                        </div>
+                        <div class="contentTitle-profile">
+                            <div class="usernameLeft">个人简介：</div>
+                            <div class="usernameRight">XXX</div>
+                        </div>
+                        <div class="contentTitle-revise">
+                            <input type="button" name="" class="btn-revise" value="修改">
+                        </div>
+                    </div>
+                    </div>
+                <div class="forDisplay">        
+                    <form class="layui-form" action="">
+                    <div class="chosenTitle">修改资料</div>
+                    <div class="chosenContent">
+                        <div class="content-title_input">
+                            <div class="headPic">
+                                <div class="title">修改头像：</div>
+                                <div class="layui-upload-list">
+                                    <img src="../imgs/个人中心/图层8.png" class="layui-upload-img" id="headImg" width="116px" height="115px">
+                                    <p id="demoText"></p>
+                                </div>
+                                <button type="button" class="layui-btn" id="picUp">上传图片</button>
+                            </div>
+                            <div class="userName">用户名：
+                                <input type="text" class="nameInput" name="" id="" style="width: 302px;height: 29px;background: transparent;border: solid 1px #d2d2d2">
+                            </div>
+                            <div class="bornYear">出生年月：
+                                    <div class="layui-input-inline">
+                            <input type="text" class="layui-input timeChoser"  placeholder="YY--MM--DD" style="background: transparent;border: solid 1px #d2d2d2">
+                                    </div>
+                            </div>
+                            <div class="sex">性别：
+                            <input type="radio" name="sex" value="男" title="男">
+                            <input type="radio" name="sex" value="女" title="女">
+                            </div>
+                            <div class="consignee">收货人：
+                                <input type="text" name="" id="" style="width: 160px;height: 29px;background: transparent;border: solid 1px #d2d2d2">
+                            </div>
+                            <div class="contactWay">联系方式：
+                                <input type="text" name="" id="" style="width: 160px;height: 29px;background: transparent;border: solid 1px #d2d2d2">
+                            </div>
+                            <div class="address">收货地址：
+                            <div class="addressMove">
+                                    <div class="layui-input-inline">
+                                            <select name="quiz1">
+                                              <option value="">请选择省</option>
+                                              <option value="浙江" selected="">浙江省</option>
+                                              <option value="你的工号">江西省</option>
+                                              <option value="你最喜欢的老师">福建省</option>
+                                            </select>
+                                          </div>
+                                          <div class="layui-input-inline">
+                                            <select name="quiz2">
+                                              <option value="">请选择市</option>
+                                              <option value="杭州">杭州</option>
+                                              <option value="宁波" disabled="">宁波</option>
+                                              <option value="温州">温州</option>
+                                              <option value="温州">台州</option>
+                                              <option value="温州">绍兴</option>
+                                            </select>
+                                          </div>
+                                          <div class="layui-input-inline">
+                                            <select name="quiz3">
+                                              <option value="">请选择县/区</option>
+                                              <option value="西湖区">西湖区</option>
+                                              <option value="余杭区">余杭区</option>
+                                              <option value="拱墅区">临安市</option>
+                                            </select>
+                                          </div>
+                                    </div>      
+                            </div>
+                            <div class="profile">
+                            <div>个人简介：</div>
+                               <textarea name="" id=""  style="width:630px; height:70px; background: transparent;border: solid 1px #d2d2d2"></textarea>
+                            </div>
+                        </div>
+                        <div class="confirm_cancel">
+                            <input type="button"  class="confirm" value="完成">
+                            <input type="button"  class="cancel"  value="取消">
+                        </div>
+                    </div>
+                </form>
+        </div>             
         </div>
-    </div>
-    <script>
-
-    </script>
+    </div>     
 </body>
 </html>

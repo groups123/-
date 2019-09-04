@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手艺人认证</title>
+    <link rel="stylesheet" href="../sass/mine.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../layui/layui.js"></script>
+    <script src="../js/jquery.js"> </script>
+</head>
+
+<body>
+    <div class="ident">
+        <div class="ident_width">
+            <div class="ident_title">手艺人认证</div>
+            <div class="process">
+                <div class="process1">
+                    <div class="pro_radius real_bg"><span>1</span></div>
+                    <div class="real_name rel_color ">实名认证</div>
+                    <div class="line_ "></div>
+                </div>
+                <div class="process2">
+                    <div class="pro_radius "><span>2</span></div>
+                    <div class="real_name">实名认证</div>
+                    <div class="line_"></div>
+                </div>
+                <div class="process3">
+                    <div class="pro_radius"><span>3</span></div>
+                    <div class="real_name ">实名认证</div>
+                    <div class="line_"></div>
+                </div>
+                <div class="process4">
+                    <div class="pro_radius"><span>4</span></div>
+                    <div class="real_name">实名认证</div>
+                </div>
+            </div>
+            <div class="ident_sub">
+                <div class="ident_ifor">
+                    <form class="layui-form" action="" lay-filter="example">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手机号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="username" lay-verify="title" autocomplete="off"
+                                    placeholder="请输入正确手机号" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">姓名</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="password" placeholder="请输入真实姓名" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">证件类型</label>
+                            <div class="layui-input-block">
+                                <select name="interest" lay-filter="aihao">
+                                    <option value=""></option>
+                                    <option value="0" selected>身份证件</option>
+                                    <option value="1">护照</option>
+                                    <option value="2">驾照</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">证件号</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="password" placeholder="请填写正确" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手艺分类</label>
+                            <div class="layui-input-block">
+                                <select name="interest" lay-filter="aihao">
+                                    <option value=""></option>
+                                    <option value="0">陶瓷</option>
+                                    <option value="1">木雕</option>
+                                    <option value="2">刺绣</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-upload">
+                            <button type="button" class="layui-btn" id="test2">证件照上传</button>
+                            <blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+                                预览图：
+                                <div class="layui-upload-list" id="demo2"></div>
+                            </blockquote>
+                        </div>
+
+                        <div class="ident_but">提交</div>
+                    </form>
+                </div>
+                <div class="ident_work">
+                    <div class="pros_citys">
+                        <div class="work_kind">作品分类</div>
+                        <div class="pro_city">
+                            <!-- 选择的省: -->
+                            <select id="province"></select>
+                            <!-- 选择的市: -->
+                            <select id="city"></select>
+                        </div>
+                    </div>
+                    <form class="layui-form" action="" lay-filter="example">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">作品名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="username" lay-verify="title" autocomplete="off"
+                                    placeholder="请输入正确手机号" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">规格</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="password" placeholder="请填写正确" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">价格</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="password" placeholder="请填写正确" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">作品简介</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="password" placeholder="请填写正确" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-upload">
+                            <button type="button" class="layui-btn" id="test2">作品上传</button>
+                            <blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+                                预览图：
+                                <div class="layui-upload-list" id="demo2"></div>
+                            </blockquote>
+                        </div>
+                        <div class="ident_but2">提交</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        layui.use(['form', 'layedit', 'laydate'], function () {
+            var form = layui.form
+                , layer = layui.layer
+                , layedit = layui.layedit
+                , laydate = layui.laydate;
+            form.render();
+        });
+        layui.use('upload', function () {
+            var $ = layui.jquery
+                , upload = layui.upload;
+            upload.render({
+                elem: '#test2'
+                , url: '/upload/'
+                , multiple: true
+                , before: function (obj) {
+                    //预读本地文件示例，不支持ie8
+                    obj.preview(function (index, file, result) {
+                        $('#demo2').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                    });
+                }
+                , done: function (res) {
+                    //上传完毕
+                }
+            });
+        })
+    </script>
+    <script>
+        let arr_province = ['浙江省', '广东省', '湖北省', '台湾省'];
+        let arr_citys = [
+            ['杭州市', '温州市', '宁波市', '绍兴市'],
+            ['深圳市', '湛江市', '广州市', '佛山市'],
+            ['武汉市', '黄冈市', '鄂州市', '襄阳市'],
+            ['台北市', '高雄市', '基隆市', '台南市'],
+        ];
+
+        $(function () {
+            $.each(arr_province, function (index, ele) {
+                $('#city').empty(); //直接清空的操作 
+                var textNode = document.createTextNode(ele);
+                var opEle = document.createElement("option");
+                $(opEle).append(textNode);
+                //<option>arr_province[i]</option>
+                $(opEle).appendTo($('#province'));
+                // jq对象转成js对象直接操作
+                //$('#province').get(0).options[index].text = ele;
+                //$('#province').get(0).options[index].value = ele;
+
+                //设置默认的选择位置 
+                let postion = 0;
+                $('#province').selectedIndex = postion;
+                changeCity(postion);
+            });
+        });
+
+        function changeCity(index) {
+
+            $.each(arr_citys[index], function (i, ele) {
+                //创建节点
+                var textNode = document.createTextNode(ele);
+                //7.创建option元素节点
+                var opEle = document.createElement("option");
+                //8.将城市文本节点添加到option元素节点中去
+                $(opEle).append(textNode);
+                //<option>arr_province[i]</option>
+                $(opEle).appendTo($('#city'));
+            });
+        }
+
+        $(function () {
+            //监听 改变事件
+            $('#province').change(function () {
+                $('#city').empty();
+                changeCity(this.selectedIndex);
+
+            });
+        });
+    $('.ident_but').click(function(){
+      console.log($('.ident_ifor'))
+        $('.ident_work').show();
+        $('.ident_ifor').hide();
+        $('.process2 .pro_radius ').addClass('real_bg');
+        $('.process1 .line_').addClass('real_bg2')
+
+
+    });
+    </script>
+</body>
+</html>

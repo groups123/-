@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/ajax.js"></script>
+</head>
+<body>
+    <script>
+        $(function () {  
+     let url_='/craftsmen/area/?parent_id=2';
+     // 请求
+     getajax('GET',url_,'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTU2NzU5NTMyMSwianRpIjoiZDUyN2VjM2VmNzVkNDI1NWExZDU3YTMxZmFkOWIwMGQiLCJ1c2VyX2lkIjo1LCJtb2JpbGUiOiIxIn0.0BuM7mAuzJO7dBwODYpVZXMbQtRazYfxHeThuvWug_s').then(
+       
+     resolve=>{
+            console.log(resolve);    
+        }
+     )
+            
+            function get_address_json(obj_val, empty_obj, call_back) {
+                $.getJSON('/user_systems/get_address/', {'parent_id': obj_val}, function (response_data) {
+                    empty_obj.empty();
+                    $.each(response_data.data, function (index, item) {
+                        empty_obj.append('<option value="' + item.id + '">' + item.name + '</option>')
+                    });
+                    if (call_back != undefined) {
+                        call_back()
+                    }
+                })
+            }
+            // ajax异步加载的问题，
+            get_address_json(0, $('select[name=provence]'), function () {
+                    $('select[name=provence]').change();
+                    {$('select[name=area]').click();}  // 可以省略，因为下面的城市事件自带了事件
+                }
+            );
+            //  省份选择单击事件
+            $('select[name=provence]').on('change', function () {
+                get_address_json($(this).val(), $('select[name=area]'), function () {
+                    $('select[name=area]').change();
+                });
+            })
+            // 城市选择单击事件
+            $('select[name=area]').on('change', function () {
+                get_address_json($(this).val(), $('select[name=city]'));
+            })
+        })
+        
+    </script>
+</body>
+</html>

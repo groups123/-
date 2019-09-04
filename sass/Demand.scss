@@ -24,69 +24,146 @@
     width: 100%;
     height: 1036px;
     position: relative;
+    .word{
+        position: absolute;
+        @include distance(55px,843px);
+        @include style_(58px,#444444,bolder);
+    } 
+    .word1{
+        position: absolute;
+        @include distance(189px,396px);
+        @include style_(24px,#333333,bolder);
+    } 
+    .frame{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        padding-left: 54px;
+        letter-spacing: 2px;
+        @include box_(158px,36px);
+        @include distance(184px,715px);
+        @include style_(14px,#787878,bolder);
+    }
+    .frame1{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        padding-left: 54px;
+        letter-spacing: 2px;
+        @include box_(158px,36px);
+        @include distance(164px,11px);
+        @include style_(14px,#787878,bolder);
+    }
+    .word2{
+        position: absolute;
+        @include distance(37px,420px);
+        @include style_(24px,#333333,bolder);
+    } 
+    .frame2{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        padding-left: 54px;
+        letter-spacing: 2px;
+        @include box_(158px,36px);
+        @include distance(30px,715px);
+        @include style_(14px,#787878,bolder);
+    }
+    .word3{
+        position: absolute;
+        @include distance(-30px,894px);
+        @include style_(24px,#bababa,bolder);
+    }
+    .word4{
+        position: absolute;
+        @include distance(39px,492px);
+        @include style_(24px,#333333,bolder);
+    }
+    .ipt_{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        position: absolute;
+        padding-left: 5px;
+        @include box_(200px,36px);
+        @include distance(100px,-160px);
+        @include style_(14px,#787878,bolder);
+    } 
+    .word5{
+        position: absolute;
+        @include distance(101px,372px);
+        @include style_(24px,#333333,bolder);
+    }
+    .ipt1_{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        position: absolute;
+        @include box_(400px,36px);
+        @include distance(160px,-160px);
+    } 
+    .word6{
+        position: absolute;
+        @include distance(161px,614px);
+        @include style_(24px,#333333,bolder);
+    } 
+    .ipt2_{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        position: absolute;
+        @include box_(68px,36px);
+        @include distance(160px,260px);
+        @include style_(16px,#333333,bolder);
+        padding-left: 15px;
+    } 
+    .ipt3_{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        position: absolute;
+        @include box_(363px,36px);
+        @include distance(222px,-160px);
+    }
+    .word7{
+        position: absolute;
+        @include distance(223px,586px);
+        @include style_(24px,#333333,bolder);
+    } 
+    .ipt4_{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        position: absolute;
+        @include box_(363px,36px);
+        @include distance(282px,-160px);
+    }
+    .word8{
+        position: absolute;
+        @include distance(283px,587px);
+        @include style_(24px,#333333,bolder);
+    } 
+    .ipt5_{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        position: absolute;
+        @include box_(363px,36px);
+        @include distance(347px,-160px);
+    }
+    .word9{
+        position: absolute;
+        @include distance(338px,488px);
+        @include style_(24px,#333333,bolder);
+    } 
+    .ipt6_{
+        border: solid 1px #c8c8c8;
+        outline: none;
+        position: absolute;
+        @include box_(843px,260px);
+        @include distance(405px,-160px);
+        resize: none;
+    }
+    .btn{
+        outline: none;
+        position: absolute;
+        border-radius: 5px;
+        background: #936237;
+        cursor: pointer;
+        @include box_(150px,40px);
+        @include distance(725px,0px);
+        @include style_(18px,#ffffff,bolder);
+    }
 }
-#main .word{
-    position: absolute;
-    @include distance(55px,843px);
-    @include style_(58px,#444444,bolder);
-} 
-#main .word1{
-    position: absolute;
-    @include distance(189px,396px);
-    @include style_(24px,#333333,bolder);
-} 
-#main .frame{
-    border: solid 1px #c8c8c8;
-    outline: none;
-    padding-left: 54px;
-    letter-spacing: 2px;
-    @include box_(158px,36px);
-    @include distance(184px,715px);
-    @include style_(14px,#787878,bolder);
-}
-#main .frame1{
-    border: solid 1px #c8c8c8;
-    outline: none;
-    padding-left: 54px;
-    letter-spacing: 2px;
-    @include box_(158px,36px);
-    @include distance(164px,11px);
-    @include style_(14px,#787878,bolder);
-}
-#main .word2{
-    position: absolute;
-    @include distance(37px,420px);
-    @include style_(24px,#333333,bolder);
-} 
-#main .frame2{
-    border: solid 1px #c8c8c8;
-    outline: none;
-    padding-left: 54px;
-    letter-spacing: 2px;
-    @include box_(158px,36px);
-    @include distance(30px,715px);
-    @include style_(14px,#787878,bolder);
-}
-#main .word3{
-    position: absolute;
-    @include distance(-30px,894px);
-    @include style_(24px,#bababa,bolder);
-} 
-#main .word4{
-    position: absolute;
-    @include distance(39px,492px);
-    @include style_(24px,#333333,bolder);
-}
-#main .ipt_{
-    outline: none;
-    position: absolute;
-    padding-left: 5px;
-    @include box_(200px,36px);
-    @include distance(100px,-160px);
-    @include style_(14px,#787878,bolder);
-} 
-#main .word5{
-    position: absolute;
-    @include distance(101px,372px);
-    @include style_(24px,#333333,bolder);
-} 
+

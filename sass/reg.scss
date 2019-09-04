@@ -9,7 +9,7 @@
   position: relative;
     .reg_reg{
         width: 500px;
-      position: absolute;
+        position: absolute;
         left: 50%;
         transform: translateX(-200px) translateY(150px);
         box-shadow: 5px 5px 5px #C1C0BC;
@@ -29,43 +29,50 @@
             >.reg_user{
                 background-color: #F0F0F0;
                 width: 500px;
-                height: 450px;
+                height: 480px;
                 margin-top: 40px;
+                border-radius: 5px;
+                .reg_width{
+              width: 380px;
                 .back{
                     font: 12px '微软雅黑';
-            padding: 10px 20px;
+                    padding-top: 20px;
                 }
                 >h3{
                     text-align: center;
-                    font: 450 16px '黑体';
+                    font:  16px '黑体';
                     text-shadow: 2px 2px 2px #C0C0C0;
-                    padding-top: 20px
+                    padding-top: 10px
                 }
                 >.ifor{
-                    
-                
                 .user_name{
                     border: none;
                     outline: none;
-               padding-top: 50px;
-               padding-left: 20px;
+                    padding-top: 45px;
                     background-color: #F0F0F0   ;
                     font:500 12px '微软雅黑';
-                    color: black
+                    color: black;
+                width:300px;
+                };
+                .res{
+                    color: red;
+                    font: 14px '微软雅黑'
+
                 }
                 >.user_line{
-                    width: 460px;
+                    width:100%;
                     border: 0.5px solid rgb(167, 149, 149);
                     margin-top: 15px
                 }
              >button{
-                 width: 460px;
+                 width: 100%;
                  padding: 7px;
-                 margin-left: 20px;
                  border-radius: 10px;
                  background-color: #B3B3B3;
                  margin-top: 60px;
-                 outline: none
+                 outline: none;
+                 border: 1px solid #B3B3B3;
+                 color: white;
              }
             .copy{
                 margin-top: 250px;
@@ -75,7 +82,7 @@
                     text-align: center
                  }
             
-            }
+            } }
              
             }
         }

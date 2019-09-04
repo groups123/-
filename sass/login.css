@@ -47,6 +47,7 @@
 
 .login_bg .login_login .tab1 {
   display: block;
+  width: 380px;
 }
 
 .login_bg .login_login .password {
@@ -67,7 +68,6 @@
 
 .login_bg .login_login .phone {
   margin-top: 40px;
-  margin-left: 60px;
   height: 20px;
 }
 
@@ -89,7 +89,7 @@
   float: left;
   padding-left: 10px;
   margin-right: 30px;
-  width: 300px;
+  width: 250px;
   border: none;
   outline: none;
   background-color: #F0F0F0;
@@ -99,19 +99,27 @@
   color: red;
 }
 
+.login_bg .login_login .phone .true_hide {
+  color: red;
+  float: right;
+  display: none;
+  font: 14px '微软雅黑';
+  margin-top: -20px;
+}
+
 .login_bg .login_login .line {
   width: 380px;
-  border: 0.4px solid #a79595;
+  border: 0.7px solid #a79595;
   margin-top: 15px;
 }
 
 .login_bg .login_login .yanzheng {
+  width: 100%;
   margin-top: 40px;
-  margin-left: 60px;
 }
 
 .login_bg .login_login .yanzheng > input {
-  width: 300px;
+  width: 250px;
   border: none;
   outline: none;
   background-color: #F0F0F0;
@@ -124,7 +132,6 @@
 .login_bg .login_login .yanzheng .getyanzheng {
   display: block;
   float: right;
-  margin-right: 60px;
   font: 14px '微软雅黑';
   color: #6593d8;
   cursor: pointer;
@@ -152,13 +159,14 @@
 }
 
 .login_bg .login_login button {
-  width: 390px;
+  width: 380px;
   padding: 7px;
-  margin-left: 57px;
   border-radius: 10px;
   background-color: #B3B3B3;
   margin-top: 60px;
   outline: none;
+  border: 1px solid #B3B3B3;
+  color: white;
 }
 
 .login_bg .login_login .copy {

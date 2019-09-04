@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详细页面</title>
+    <link rel="stylesheet" href="../sass/Detailed.css">
+    <link rel="stylesheet" href="../sass/index.css">
+</head>
+<body>
+        <header id="header">
+                <div class="header_width">
+                    <div class="logo"></div>
+                    <div class="nav">
+                        <nav>
+                            <ul>
+                                <li class="scale line_"><a href="#">首页</a></li>
+                                <li><a href="#">发现好物</a></li>
+                                <li><a href="#">寻找手艺人</a></li>
+                                <li><a href="#">招聘手艺人</a></li>
+                                <li><a href="#">工艺定制</a></li>
+                                <li><a href="#">关于我们</a></li>
+                            </ul>
+                        </nav>
+                        <div class="sousuo"></div>
+                    </div>
+                    <div class="header_right">
+                        <a href="#"><span class="iconfont icon-sousuo"></span></a>
+                        <span></span>
+                        <a href="#"><span>注册</span></a>
+                        <span></span>
+                        <a href="#"><span>登陆</span></a>
+                    </div>
+                </div>
+            </header>
+        
+
+    <main id="main">
+        <section class="box">
+            <img src="../imgs/Detailed/Detailed8.png">
+        </section>
+        <p class="word">福禄寿手工制作摆件</p>
+        <p class="word1">￥2000</p>
+        <div class="box1">1</div>
+        <input type="button" value="-" class="btn">
+        <input type="button" value="+" class="btn1">
+        <div class="box2">定制</div>
+        <p class="word2">产品信息</p>
+        <p class="word3">-桃木</p>
+        <p class="word4">-圆雕</p>
+        <p class="word5">-18.4厘米</p>
+        <p class="word6">-莆田木雕</p>
+        <div class="box3">
+            <img src="../imgs/Detailed/Detailed6.png">
+        </div>
+        <p class="word7">瞿秋白</p>
+        <p class="word8">莆田木雕工艺主要以立体圆雕、精微细雕和三重透雕为主，十分讲究刀法的娴熟和线条的流畅，因此打牢基本功极其重要。</p>
+        <p class="word9">产品介绍</p>
+        <p class="word10">精致雕刻成一个不朽的小男孩，站在一个
+            灵芝形的云底上，这个不朽的人用他的头抬起来，用右手抚摸着他的分叉胡须的一端，他的头发整齐地梳理成两个面包头，他穿着宽松的长袍系在腰间，露出胸部和突出的肚子，他的长袍精巧地镶嵌着花卉刺绣图案，背面有一个双葫芦，孩子站在不朽的右边，抬头看着他，同样装饰着宽松飘逸的长袍，头发整齐地梳理成两侧的两个双面包，双手牢牢握住一根
+            灵芝茎，温暖的金棕色竹子</p>
+        <div class="box4">
+            <img src="../imgs/Detailed/Detailed4.png">
+        </div>
+        <div class="box5">
+            <img src="../imgs/Detailed/Detailed5.png">
+        </div>
+        <div class="box6">
+            <img src="../imgs/Detailed/Detailed7.png">
+        </div>
+        <hr class="line">
+        <p class="word11">热门推荐</p>
+        <div class="box7">
+                <img src="../imgs/Detailed/Detailed3.png">
+            </div>
+            <div class="box8">
+                    <img src="../imgs/Detailed/Detailed1.png">
+                </div>
+                <div class="box9">
+                        <img src="../imgs/Detailed/Detailed2.png">
+                    </div>
+    </main>
+
+    <footer id="footer">
+            <div class="footer">
+                <div class="line1">
+                    <span class=" iconfont icon-shouji"></span>
+                    <span>关于我们</span>
+                    <span>加入匠心</span>
+                    <span>用户协议</span>
+                    <span>隐私政策</span>
+                    <span>侵权电话</span>
+                    <span>企业服务</span>
+                    <span>帮助中心</span>
+                    <span>联系我们</span>
+                    <span>中文</span>
+                    <span>English</span>
+                    <div class="chat">
+                        <span class=" iconfont icon-wechat"></span>
+                        <span class="iconfont icon-weibo"></span>
+                    </div>
+                </div>
+                <div class="line2"></div>
+                <div class="line3">
+                    <span>京ICP备11017824号-4</span>
+                    <span>|</span>
+                    <span> 京ICP证140164号</span>
+                    <span>|</span>
+                    <span> 网络文化经营许可证&nbsp;京网文|</span>
+                    <span>|</span>
+                    <span>广播电视节目制作经营许可证（京东）字第06990号</span>
+                </div>
+                <div class="line4">
+                    <span>网上有害信息举报专区</span>
+                    <span>|</span>
+                    <span>不良信息举报电话：-1--56538658</span>
+                    <span>|</span>
+                    <span>举报邮箱jubao@chool.com.cn</span>
+                    <span>|</span>
+                    <span>举报邮箱jubao@chool.com.cn</span>
+                    <span>|</span>
+                    <span>联系电话：010-01010100</span>
+                    <span>Copyright&reg;2006-2019匠心</span>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+                $('nav li').on({
+                    mouseenter: function () {
+                        $(this).addClass('scale').siblings().removeClass('scale');
+                        $(this).addClass('line_').siblings().removeClass('line_');
+                    }
+                });
+                $('.icon-sousuo').click(function () {
+                    $('.header_width .sousuo').toggle();
+                    $('.header_width .nav nav').toggle();
+                })  
+            </script>
+</body>
+
+</html>

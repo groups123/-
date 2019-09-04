@@ -1,0 +1,146 @@
+@mixin ident_but {
+    width: 150px;
+height: 40px;
+background-color: #7F5430;
+text-align: center;
+line-height: 40px;
+margin: 35px auto;
+border-radius: 10px;
+color: white;
+font-size: 18px;
+}
+.ident{
+    width: 760px;
+    height: 700px;
+    .ident_width{
+        width: 720px;
+        height:560px;
+      
+        margin: 0 auto;
+       
+    .ident_title{
+        width: 100%;
+        height: 50px;
+        line-height: 68px;
+    }
+    .process{
+        width: 517px;
+        height: 60px;
+        margin: 0 auto;
+      
+        .process1,.process2,.process3,.process4{
+            width: 78px;
+            height: 60px;
+            float: left;
+            margin-right: 49px;
+            position: relative;
+            .pro_radius{
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background-color: #C8C8C8;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 28px;
+                span{
+                    color: white;
+                }
+               
+        }
+        .real_bg{
+            background-color: #906038;
+        };
+        .rel_color{
+            color: #906038!important;
+        }
+        .real_name{
+            text-align: center;
+            margin-top: 10px;
+            color: #C8C8C8;
+        };
+        >.line_{
+            width: 99px;
+            position: absolute;
+            border: 1px solid #C8C8C8;
+            top: 14px;
+            left: 53px;
+        };
+        .real_bg2{
+            border: 1px solid #906038;
+        }
+    }
+}}
+.ident_sub{
+    width: 100%;
+    height: auto;
+  
+.ident_ifor{
+    width: 100%;
+    height: 630px;
+    
+    .layui-form-item{
+        margin-top: 35px;
+        .layui-input,select,.layui-form-select{
+                width: 300px!important;
+        };
+        .layui-edge{
+            left: 270px;
+        };
+        select{
+            width: 300px;
+        }
+    };
+    .layui-upload{
+        margin-top: 25px;
+        #demo2{
+            margin-top: 35px;
+           
+        }
+    };
+    .ident_but{
+        @include ident_but;
+    }
+}
+.ident_work{
+    width: 100%;
+    height: 500px;
+    display: none;
+    .pros_citys{
+margin-top: 20px;
+height: 50px;;
+//  
+    .pro_city{
+        float: left;
+        width:350px;
+        height: 30px;
+        #province,#city{
+            width: 145px;
+            height: 30px;
+            float: left;
+            margin-right: 10px;   
+        }
+    }
+    .work_kind{
+        @extend .pro_city ;
+        width: 76px;
+        text-align: center;
+        line-height: 30px;
+        margin-left: 30px;
+        margin-right: 5px
+    }
+};
+.layui-form{
+    .layui-form-item{
+        input{
+            width: 300px;
+        }
+    };
+    .ident_but2{
+       @include ident_but;
+    }
+}
+}
+}
+
+
+}

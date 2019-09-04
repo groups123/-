@@ -10,9 +10,11 @@ img{
     transition: .5s;
 }
 .showSome-artisan{
+    position: relative;
     display: flex;
-    width: 63%;
-    & > div:hover{
+    width: 1200px;
+    padding-bottom: 35px;
+    & > div >div:hover{
         img{
             transform: scale(1.01);
             transition: .5s;
@@ -23,15 +25,17 @@ img{
             height: 72px;
         }
     }
-    &>div:nth-child(1){
-        height: 531px;
-    }
-    &>div:nth-child(2){
-        height: 483px;
-    }
+
     &>div{
         width: 28.42%;
         position: relative;
+        margin-right: 36px;
+        >div:nth-child(2),div:nth-child(3){
+            margin-top: 38px;
+        }
+        >div{
+            position: relative;
+        }
         .findMsg{
             color: #fffffb;
             background-color: #936237;
@@ -40,7 +44,7 @@ img{
             overflow: hidden;
             transition: .5s;
             position: absolute;
-            bottom: -2.5px;
+            bottom: 0;
             .thisTitle{
                 margin-left: 16px;
                 .thisName{
